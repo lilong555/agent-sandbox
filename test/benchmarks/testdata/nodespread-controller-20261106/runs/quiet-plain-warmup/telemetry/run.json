@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "samples": [
+    {
+      "tag": "start",
+      "started_at": {
+        "utc": "2026-11-05T15:55:48.781226+00:00",
+        "monotonic_seconds": 26783.898461991
+      },
+      "status": "complete",
+      "artifact": "metrics-0000.prom",
+      "ended_at": {
+        "utc": "2026-11-05T15:55:48.787659+00:00",
+        "monotonic_seconds": 26783.904901599
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T15:55:53.787799+00:00",
+        "monotonic_seconds": 26788.905051123
+      },
+      "status": "complete",
+      "artifact": "metrics-0001.prom",
+      "ended_at": {
+        "utc": "2026-11-05T15:55:53.792350+00:00",
+        "monotonic_seconds": 26788.909592659
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T15:55:58.792507+00:00",
+        "monotonic_seconds": 26793.909762909
+      },
+      "status": "complete",
+      "artifact": "metrics-0002.prom",
+      "ended_at": {
+        "utc": "2026-11-05T15:55:58.797394+00:00",
+        "monotonic_seconds": 26793.914639578
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T15:56:03.797554+00:00",
+        "monotonic_seconds": 26798.914812383
+      },
+      "status": "complete",
+      "artifact": "metrics-0003.prom",
+      "ended_at": {
+        "utc": "2026-11-05T15:56:03.802302+00:00",
+        "monotonic_seconds": 26798.919579981
+      }
+    },
+    {
+      "tag": "end",
+      "started_at": {
+        "utc": "2026-11-05T15:56:08.751245+00:00",
+        "monotonic_seconds": 26803.869897495
+      },
+      "status": "complete",
+      "artifact": "metrics-0004.prom",
+      "ended_at": {
+        "utc": "2026-11-05T15:56:08.761222+00:00",
+        "monotonic_seconds": 26803.879898021
+      }
+    }
+  ],
+  "errors": [],
+  "trigger": {
+    "kind": "sustained",
+    "phase": "claims-warm-sustained",
+    "phase_number": 1,
+    "at": {
+      "utc": "2026-11-05T15:55:48.780848+00:00",
+      "monotonic_seconds": 26783.898078527
+    }
+  },
+  "boundary": {
+    "kind": "arrivals_finished",
+    "at": {
+      "utc": "2026-11-05T15:56:08.751004+00:00",
+      "monotonic_seconds": 26803.869693789
+    }
+  },
+  "exit_code": 0
+}

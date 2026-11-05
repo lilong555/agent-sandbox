@@ -1,0 +1,158 @@
+name: NodeSpread Controller Evidence
+
+on:
+  push:
+    branches:
+      - evidence/pr2179-local-controller-20261106
+    paths:
+      - .github/workflows/nodespread-controller-evidence.yml
+      - test/benchmarks/testdata/nodespread-controller-20261106/**/*.py
+      - test/benchmarks/testdata/nodespread-controller-20261106/**/*.go
+      - test/benchmarks/testdata/nodespread-controller-20261106/kind.yaml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nodespread-controller-evidence-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  controller-comparison:
+    if: github.repository == 'lilong555/agent-sandbox'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      BASELINE: 4d39311ba9d89001d79ff1217ed330c7ea3761ec
+      CANDIDATE: a87fa000ec96c8e3d9be493da5c6e6e2048b37ad
+      EVIDENCE: test/benchmarks/testdata/nodespread-controller-20261106
+      GOTOOLCHAIN: local
+      KIND_VERSION: v0.33.0
+      KIND_SHA256: aee6151561422756b764a4ae28e7f44cda5af5a9eead3cc9985112b1de8d8e0d
+      NODE_IMAGE: kindest/node:v1.35.8@sha256:07b2536e30b803ed61d1677a79df6115f798ce64c80f9e22f6ed45afd09323c0
+      SANDBOX_IMAGE: node@sha256:dbcedd8aeab47fbc0f4dd4bffa55b7c3c729a707875968d467aaaea42d6225af
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: "1.27.3"
+          cache: true
+
+      - name: Verify evidence integrity
+        working-directory: ${{ env.EVIDENCE }}
+        run: sha256sum --quiet --check SHA256SUMS
+
+      - name: Verify the experiment harness
+        run: |
+          python3 -B -m unittest discover -s "$EVIDENCE/retest-quiet" -p 'test_*.py'
+          python3 -B -m unittest discover -s "$EVIDENCE" -p 'test_profile_workload.py'
+          go test "$EVIDENCE/retest-quiet/analyze_metrics.go" "$EVIDENCE/retest-quiet/analyze_metrics_test.go"
+
+      - name: Build the fixed controller revisions and shared workload
+        run: |
+          mkdir -p "$RUNNER_TEMP/experiment-bin" "$RUNNER_TEMP/setup-evidence"
+          git worktree add --detach "$RUNNER_TEMP/source-baseline" "$BASELINE"
+          git worktree add --detach "$RUNNER_TEMP/source-candidate" "$CANDIDATE"
+          for revision in baseline candidate; do
+            source="$RUNNER_TEMP/source-$revision"
+            commit="$(git -C "$source" rev-parse HEAD)"
+            go -C "$source" mod download
+            make -C "$source" build-controller \
+              GIT_VERSION="$commit" GIT_SHA="$commit" BUILD_DATE=2026-11-06T00:00:00Z
+            go version -m "$source/bin/manager" > "$RUNNER_TEMP/setup-evidence/$revision-build.txt"
+          done
+          python3 -c 'import json, os, pathlib; root = pathlib.Path(os.environ["RUNNER_TEMP"]); overlay = {"Replace": {str(root / "source-candidate/test/stress/sustained.go"): str(pathlib.Path(os.environ["EVIDENCE"]).resolve() / "sustained_seed0.go")}}; (root / "stress-overlay.json").write_text(json.dumps(overlay) + "\n")'
+          go -C "$RUNNER_TEMP/source-candidate" build \
+            -overlay "$RUNNER_TEMP/stress-overlay.json" \
+            -o "$RUNNER_TEMP/experiment-bin/stress" ./test/stress
+          go build -o "$RUNNER_TEMP/experiment-bin/analyze_metrics" \
+            "$EVIDENCE/retest-quiet/analyze_metrics.go"
+          go build -o "$RUNNER_TEMP/experiment-bin/emit_schedule" \
+            "$EVIDENCE/retest-quiet/emit_schedule.go"
+          go version -m "$RUNNER_TEMP/experiment-bin/stress" > "$RUNNER_TEMP/setup-evidence/stress-build.txt"
+          sha256sum "$RUNNER_TEMP/source-baseline/bin/manager" \
+            "$RUNNER_TEMP/source-candidate/bin/manager" \
+            "$RUNNER_TEMP/experiment-bin/"* > "$RUNNER_TEMP/setup-evidence/binaries.sha256"
+
+      - name: Prepare the dedicated Kubernetes cluster
+        run: |
+          export KUBECONFIG="$RUNNER_TEMP/nodespread-kubeconfig"
+          curl --fail --location --silent --show-error --retry 3 \
+            "https://github.com/kubernetes-sigs/kind/releases/download/$KIND_VERSION/kind-linux-amd64" \
+            --output "$RUNNER_TEMP/experiment-bin/kind"
+          printf '%s  %s\n' "$KIND_SHA256" "$RUNNER_TEMP/experiment-bin/kind" | sha256sum --check
+          chmod +x "$RUNNER_TEMP/experiment-bin/kind"
+          docker pull "$NODE_IMAGE"
+          docker pull "$SANDBOX_IMAGE"
+          docker tag "$SANDBOX_IMAGE" node:22-alpine
+          "$RUNNER_TEMP/experiment-bin/kind" create cluster \
+            --name as-nodespread-2179 --image "$NODE_IMAGE" \
+            --config "$EVIDENCE/kind.yaml" --kubeconfig "$KUBECONFIG" --wait 180s
+          "$RUNNER_TEMP/experiment-bin/kind" load docker-image \
+            --name as-nodespread-2179 node:22-alpine
+          kubectl apply -f "$RUNNER_TEMP/source-candidate/k8s/crds/"
+          kubectl wait --for=condition=Established --timeout=90s crd --all
+          kubectl wait --for=condition=Ready --timeout=180s nodes --all
+          go version > "$RUNNER_TEMP/setup-evidence/go-version.txt"
+          "$RUNNER_TEMP/experiment-bin/kind" version > "$RUNNER_TEMP/setup-evidence/kind-version.txt"
+          docker version > "$RUNNER_TEMP/setup-evidence/docker-version.txt"
+          docker image inspect "$NODE_IMAGE" "$SANDBOX_IMAGE" > "$RUNNER_TEMP/setup-evidence/images.json"
+          kubectl version -o json > "$RUNNER_TEMP/setup-evidence/kubernetes-version.json"
+          lscpu --json > "$RUNNER_TEMP/setup-evidence/cpu.json"
+          df -h > "$RUNNER_TEMP/setup-evidence/disk-before.txt"
+          sleep 30
+
+      - name: Calibrate capacity and run the ABBA comparison
+        run: |
+          python3 -B "$EVIDENCE/retest-quiet/ci_round.py" \
+            --baseline "$RUNNER_TEMP/source-baseline/bin/manager" \
+            --candidate "$RUNNER_TEMP/source-candidate/bin/manager" \
+            --stress "$RUNNER_TEMP/experiment-bin/stress" \
+            --metrics-parser "$RUNNER_TEMP/experiment-bin/analyze_metrics" \
+            --schedule-emitter "$RUNNER_TEMP/experiment-bin/emit_schedule" \
+            --kubeconfig "$RUNNER_TEMP/nodespread-kubeconfig" \
+            --output "$RUNNER_TEMP/round-results"
+
+      - name: Publish the round summary
+        if: always()
+        run: |
+          if [[ -f "$RUNNER_TEMP/round-results/REPORT.md" ]]; then
+            cat "$RUNNER_TEMP/round-results/REPORT.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Collect cluster diagnostics
+        if: always()
+        continue-on-error: true
+        run: |
+          export KUBECONFIG="$RUNNER_TEMP/nodespread-kubeconfig"
+          mkdir -p "$RUNNER_TEMP/setup-evidence"
+          df -h > "$RUNNER_TEMP/setup-evidence/disk-after.txt"
+          docker stats --no-stream --format '{{json .}}' > "$RUNNER_TEMP/setup-evidence/container-stats.jsonl"
+          kubectl get nodes -o json > "$RUNNER_TEMP/setup-evidence/nodes-after.json"
+          kubectl get pods -A -o json > "$RUNNER_TEMP/setup-evidence/pods-after.json"
+          kubectl get events -A -o json > "$RUNNER_TEMP/setup-evidence/events-after.json"
+
+      - name: Upload raw measurements and diagnostics
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: nodespread-controller-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/round-results/
+            ${{ runner.temp }}/setup-evidence/
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 6
+
+      - name: Remove the dedicated cluster
+        if: always()
+        run: |
+          if [[ -x "$RUNNER_TEMP/experiment-bin/kind" ]]; then
+            "$RUNNER_TEMP/experiment-bin/kind" delete cluster --name as-nodespread-2179
+          fi

@@ -1,0 +1,58 @@
+{
+  "suites": [
+    "results",
+    "results-unprofiled"
+  ],
+  "raw_data_encoding": "gzip for Prometheus text, claim records, and host telemetry",
+  "host_fields": {
+    "windows": [
+      "utc",
+      "cpu_percent",
+      "available_mb",
+      "pages_input_per_sec",
+      "processes"
+    ],
+    "linux": [
+      "utc",
+      "cpu_active_percent",
+      "cpu_iowait_percent",
+      "cpu_steal_percent",
+      "loadavg",
+      "available_kb",
+      "swap_used_kb",
+      "pswpin",
+      "pswpout",
+      "pressure"
+    ]
+  },
+  "claim_fields": [
+    "name",
+    "namespace",
+    "phase",
+    "phaseNumber",
+    "boundSandbox",
+    "createCalled",
+    "createReturned",
+    "sandboxReady",
+    "deleteCalled",
+    "sandboxDeleted",
+    "serverSandboxCreated",
+    "serverSandboxReady",
+    "createAckMs",
+    "sandboxReadyMs"
+  ],
+  "included": [
+    "registered protocols and harness source",
+    "source and binary fingerprints",
+    "complete run summaries and lifecycle timing records",
+    "raw controller profiles and Prometheus samples",
+    "numeric host telemetry",
+    "allowlisted inventory observations and REST code/method aggregates"
+  ],
+  "local_only": [
+    "kubeconfig and authentication material",
+    "host process identities",
+    "full Kubernetes resource inventories",
+    "controller and watch logs"
+  ]
+}

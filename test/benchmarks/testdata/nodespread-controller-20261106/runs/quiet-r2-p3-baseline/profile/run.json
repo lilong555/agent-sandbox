@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "started_at": {
+    "utc": "2026-11-05T15:26:18.608427+00:00",
+    "monotonic_seconds": 25013.632584117
+  },
+  "status": "complete",
+  "config": {
+    "metrics_url": "http://127.0.0.1:18080",
+    "profile_seconds": 30,
+    "profile_delay_seconds": 10.0,
+    "timeout_seconds": 2100,
+    "stop_grace_seconds": 10,
+    "log_poll_seconds": 0.02
+  },
+  "stress": {
+    "started_at": {
+      "utc": "2026-11-05T15:26:18.608920+00:00",
+      "monotonic_seconds": 25013.633066183
+    },
+    "ended_at": {
+      "utc": "2026-11-05T15:27:37.722237+00:00",
+      "monotonic_seconds": 25092.750345422
+    },
+    "returncode": 0
+  },
+  "workload": {
+    "trigger": {
+      "kind": "sustained",
+      "phase": "claims-warm-sustained",
+      "phase_number": 1,
+      "observed_at": {
+        "utc": "2026-11-05T15:26:28.822173+00:00",
+        "monotonic_seconds": 25023.846335658
+      }
+    },
+    "end": {
+      "kind": "arrivals_finished",
+      "observed_at": {
+        "utc": "2026-11-05T15:27:28.451169+00:00",
+        "monotonic_seconds": 25083.478000873
+      }
+    }
+  },
+  "profile_window": {
+    "preparation_started_at": {
+      "utc": "2026-11-05T15:26:38.836859+00:00",
+      "monotonic_seconds": 25033.862374742
+    },
+    "released_at": {
+      "utc": "2026-11-05T15:26:38.963295+00:00",
+      "monotonic_seconds": 25033.988807707
+    },
+    "complete": true,
+    "within_observed_workload": true,
+    "start_skew_seconds": 3.789300171774812e-05,
+    "request_envelope_seconds": 30.017382810001436,
+    "common_request_overlap_seconds": 30.006068275997677,
+    "overlap_with_workload_seconds": 30.017382810001436
+  },
+  "requests": {
+    "cpu": {
+      "status": "complete",
+      "endpoint": "/debug/pprof/profile?seconds=30",
+      "started_at": {
+        "utc": "2026-11-05T15:26:38.963428+00:00",
+        "monotonic_seconds": 25033.988945274
+      },
+      "bytes": 28868,
+      "ended_at": {
+        "utc": "2026-11-05T15:27:08.968232+00:00",
+        "monotonic_seconds": 25063.995051443
+      },
+      "artifact": "cpu.pprof",
+      "request_elapsed_seconds": 30.006106168999395,
+      "overlap_with_workload_seconds": 30.006106168999395,
+      "within_observed_workload": true
+    },
+    "mutex": {
+      "status": "complete",
+      "endpoint": "/debug/pprof/mutex?seconds=30",
+      "started_at": {
+        "utc": "2026-11-05T15:26:38.963455+00:00",
+        "monotonic_seconds": 25033.988969721
+      },
+      "bytes": 15843,
+      "ended_at": {
+        "utc": "2026-11-05T15:27:08.977303+00:00",
+        "monotonic_seconds": 25064.004138334
+      },
+      "artifact": "mutex.pprof",
+      "request_elapsed_seconds": 30.01516861300115,
+      "overlap_with_workload_seconds": 30.01516861300115,
+      "within_observed_workload": true
+    },
+    "allocs": {
+      "status": "complete",
+      "endpoint": "/debug/pprof/allocs?seconds=30",
+      "started_at": {
+        "utc": "2026-11-05T15:26:38.963469+00:00",
+        "monotonic_seconds": 25033.988983167
+      },
+      "bytes": 22046,
+      "ended_at": {
+        "utc": "2026-11-05T15:27:08.979517+00:00",
+        "monotonic_seconds": 25064.006328084
+      },
+      "artifact": "allocs.pprof",
+      "request_elapsed_seconds": 30.01734491699972,
+      "overlap_with_workload_seconds": 30.01734491699972,
+      "within_observed_workload": true
+    },
+    "metrics_start": {
+      "status": "complete",
+      "endpoint": "/metrics",
+      "started_at": {
+        "utc": "2026-11-05T15:26:38.880762+00:00",
+        "monotonic_seconds": 25033.90627647
+      },
+      "bytes": 112602,
+      "ended_at": {
+        "utc": "2026-11-05T15:26:38.885070+00:00",
+        "monotonic_seconds": 25033.910578725
+      },
+      "artifact": "metrics-start.txt",
+      "request_elapsed_seconds": 0.004302255001675803,
+      "overlap_with_workload_seconds": 0.004302255001675803,
+      "within_observed_workload": true
+    },
+    "metrics_end": {
+      "status": "complete",
+      "endpoint": "/metrics",
+      "started_at": {
+        "utc": "2026-11-05T15:27:09.034942+00:00",
+        "monotonic_seconds": 25064.061758966
+      },
+      "bytes": 112701,
+      "ended_at": {
+        "utc": "2026-11-05T15:27:09.038796+00:00",
+        "monotonic_seconds": 25064.065607487
+      },
+      "artifact": "metrics-end.txt",
+      "request_elapsed_seconds": 0.003848520998872118,
+      "overlap_with_workload_seconds": 0.003848520998872118,
+      "within_observed_workload": true
+    }
+  },
+  "errors": [],
+  "ended_at": {
+    "utc": "2026-11-05T15:27:37.722587+00:00",
+    "monotonic_seconds": 25092.75065899
+  },
+  "exit_code": 0
+}

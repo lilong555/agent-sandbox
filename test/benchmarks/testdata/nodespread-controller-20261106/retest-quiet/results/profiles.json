@@ -1,0 +1,931 @@
+{
+  "queue_function_prefix": "sigs.k8s.io/agent-sandbox/extensions/controllers/queue.",
+  "attribution": "inclusive: each sample contributes once if any stack frame matches the queue function prefix",
+  "profiles": [
+    {
+      "file": "runs/quiet-r2-p1-baseline/profile/cpu.pprof",
+      "duration_ns": 30000835092,
+      "sample_count": 154,
+      "sample_types": [
+        {
+          "type": "samples",
+          "unit": "count",
+          "total": 171,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "cpu",
+          "unit": "nanoseconds",
+          "total": 1710000000,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p1-baseline/profile/mutex.pprof",
+      "duration_ns": 30003618412,
+      "sample_count": 90,
+      "sample_types": [
+        {
+          "type": "contentions",
+          "unit": "count",
+          "total": 465,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "delay",
+          "unit": "nanoseconds",
+          "total": 10664313,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p1-baseline/profile/allocs.pprof",
+      "duration_ns": 30003105137,
+      "sample_count": 204,
+      "sample_types": [
+        {
+          "type": "alloc_objects",
+          "unit": "count",
+          "total": 2059368,
+          "queue_stack_total": 5606,
+          "queue_stack_percentage": 0.2722194381965729
+        },
+        {
+          "type": "alloc_space",
+          "unit": "bytes",
+          "total": 612084067,
+          "queue_stack_total": 1580289,
+          "queue_stack_percentage": 0.25818169189494683
+        },
+        {
+          "type": "inuse_objects",
+          "unit": "count",
+          "total": 22230,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_space",
+          "unit": "bytes",
+          "total": 3398654,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p1-candidate/profile/cpu.pprof",
+      "duration_ns": 30000520135,
+      "sample_count": 157,
+      "sample_types": [
+        {
+          "type": "samples",
+          "unit": "count",
+          "total": 173,
+          "queue_stack_total": 1,
+          "queue_stack_percentage": 0.5780346820809248
+        },
+        {
+          "type": "cpu",
+          "unit": "nanoseconds",
+          "total": 1730000000,
+          "queue_stack_total": 10000000,
+          "queue_stack_percentage": 0.5780346820809248
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p1-candidate/profile/mutex.pprof",
+      "duration_ns": 30003121351,
+      "sample_count": 79,
+      "sample_types": [
+        {
+          "type": "contentions",
+          "unit": "count",
+          "total": 413,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "delay",
+          "unit": "nanoseconds",
+          "total": 10869433,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p1-candidate/profile/allocs.pprof",
+      "duration_ns": 30003236535,
+      "sample_count": 233,
+      "sample_types": [
+        {
+          "type": "alloc_objects",
+          "unit": "count",
+          "total": 2279428,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "alloc_space",
+          "unit": "bytes",
+          "total": 646103986,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_objects",
+          "unit": "count",
+          "total": 7394,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_space",
+          "unit": "bytes",
+          "total": 3420201,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p1-candidate/profile/cpu.pprof",
+      "duration_ns": 30000804827,
+      "sample_count": 785,
+      "sample_types": [
+        {
+          "type": "samples",
+          "unit": "count",
+          "total": 956,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "cpu",
+          "unit": "nanoseconds",
+          "total": 9560000000,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p1-candidate/profile/mutex.pprof",
+      "duration_ns": 30005445776,
+      "sample_count": 184,
+      "sample_types": [
+        {
+          "type": "contentions",
+          "unit": "count",
+          "total": 1793,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "delay",
+          "unit": "nanoseconds",
+          "total": 268581905,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p1-candidate/profile/allocs.pprof",
+      "duration_ns": 30010870897,
+      "sample_count": 626,
+      "sample_types": [
+        {
+          "type": "alloc_objects",
+          "unit": "count",
+          "total": 8607287,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "alloc_space",
+          "unit": "bytes",
+          "total": 2352707563,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_objects",
+          "unit": "count",
+          "total": 58909,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_space",
+          "unit": "bytes",
+          "total": 5410451,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p1-baseline/profile/cpu.pprof",
+      "duration_ns": 30001332378,
+      "sample_count": 785,
+      "sample_types": [
+        {
+          "type": "samples",
+          "unit": "count",
+          "total": 937,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "cpu",
+          "unit": "nanoseconds",
+          "total": 9370000000,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p1-baseline/profile/mutex.pprof",
+      "duration_ns": 30017442613,
+      "sample_count": 187,
+      "sample_types": [
+        {
+          "type": "contentions",
+          "unit": "count",
+          "total": 1542,
+          "queue_stack_total": 2,
+          "queue_stack_percentage": 0.12970168612191957
+        },
+        {
+          "type": "delay",
+          "unit": "nanoseconds",
+          "total": 369818585,
+          "queue_stack_total": 1636206,
+          "queue_stack_percentage": 0.44243476838785695
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p1-baseline/profile/allocs.pprof",
+      "duration_ns": 30031925597,
+      "sample_count": 574,
+      "sample_types": [
+        {
+          "type": "alloc_objects",
+          "unit": "count",
+          "total": 7161223,
+          "queue_stack_total": 1628,
+          "queue_stack_percentage": 0.02273354704915627
+        },
+        {
+          "type": "alloc_space",
+          "unit": "bytes",
+          "total": 1930711327,
+          "queue_stack_total": 4741935,
+          "queue_stack_percentage": 0.24560559280336164
+        },
+        {
+          "type": "inuse_objects",
+          "unit": "count",
+          "total": 54479,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_space",
+          "unit": "bytes",
+          "total": 7632013,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p2-baseline/profile/cpu.pprof",
+      "duration_ns": 30001368824,
+      "sample_count": 715,
+      "sample_types": [
+        {
+          "type": "samples",
+          "unit": "count",
+          "total": 847,
+          "queue_stack_total": 1,
+          "queue_stack_percentage": 0.11806375442739078
+        },
+        {
+          "type": "cpu",
+          "unit": "nanoseconds",
+          "total": 8470000000,
+          "queue_stack_total": 10000000,
+          "queue_stack_percentage": 0.11806375442739078
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p2-baseline/profile/mutex.pprof",
+      "duration_ns": 30005859353,
+      "sample_count": 194,
+      "sample_types": [
+        {
+          "type": "contentions",
+          "unit": "count",
+          "total": 1968,
+          "queue_stack_total": 1,
+          "queue_stack_percentage": 0.05081300813008131
+        },
+        {
+          "type": "delay",
+          "unit": "nanoseconds",
+          "total": 746042275,
+          "queue_stack_total": 23303,
+          "queue_stack_percentage": 0.0031235495334362923
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p2-baseline/profile/allocs.pprof",
+      "duration_ns": 30016455174,
+      "sample_count": 585,
+      "sample_types": [
+        {
+          "type": "alloc_objects",
+          "unit": "count",
+          "total": 7981471,
+          "queue_stack_total": 14960,
+          "queue_stack_percentage": 0.18743412085316102
+        },
+        {
+          "type": "alloc_space",
+          "unit": "bytes",
+          "total": 1927823105,
+          "queue_stack_total": 8423516,
+          "queue_stack_percentage": 0.43694444672609106
+        },
+        {
+          "type": "inuse_objects",
+          "unit": "count",
+          "total": 74538,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_space",
+          "unit": "bytes",
+          "total": 7006017,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p2-candidate/profile/cpu.pprof",
+      "duration_ns": 30000909576,
+      "sample_count": 794,
+      "sample_types": [
+        {
+          "type": "samples",
+          "unit": "count",
+          "total": 963,
+          "queue_stack_total": 1,
+          "queue_stack_percentage": 0.10384215991692627
+        },
+        {
+          "type": "cpu",
+          "unit": "nanoseconds",
+          "total": 9630000000,
+          "queue_stack_total": 10000000,
+          "queue_stack_percentage": 0.10384215991692627
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p2-candidate/profile/mutex.pprof",
+      "duration_ns": 30005076979,
+      "sample_count": 173,
+      "sample_types": [
+        {
+          "type": "contentions",
+          "unit": "count",
+          "total": 1687,
+          "queue_stack_total": 1,
+          "queue_stack_percentage": 0.05927682276229994
+        },
+        {
+          "type": "delay",
+          "unit": "nanoseconds",
+          "total": 238338285,
+          "queue_stack_total": 3176,
+          "queue_stack_percentage": 0.0013325597270283287
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p2-candidate/profile/allocs.pprof",
+      "duration_ns": 30005546159,
+      "sample_count": 592,
+      "sample_types": [
+        {
+          "type": "alloc_objects",
+          "unit": "count",
+          "total": 7831760,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "alloc_space",
+          "unit": "bytes",
+          "total": 2270707089,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_objects",
+          "unit": "count",
+          "total": -9324,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_space",
+          "unit": "bytes",
+          "total": 2303138,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p2-candidate/profile/cpu.pprof",
+      "duration_ns": 30000377876,
+      "sample_count": 174,
+      "sample_types": [
+        {
+          "type": "samples",
+          "unit": "count",
+          "total": 185,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "cpu",
+          "unit": "nanoseconds",
+          "total": 1850000000,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p2-candidate/profile/mutex.pprof",
+      "duration_ns": 30003776107,
+      "sample_count": 89,
+      "sample_types": [
+        {
+          "type": "contentions",
+          "unit": "count",
+          "total": 425,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "delay",
+          "unit": "nanoseconds",
+          "total": 14016832,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p2-candidate/profile/allocs.pprof",
+      "duration_ns": 30003854920,
+      "sample_count": 202,
+      "sample_types": [
+        {
+          "type": "alloc_objects",
+          "unit": "count",
+          "total": 1768450,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "alloc_space",
+          "unit": "bytes",
+          "total": 611997748,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_objects",
+          "unit": "count",
+          "total": 58582,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_space",
+          "unit": "bytes",
+          "total": -2203636,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p2-baseline/profile/cpu.pprof",
+      "duration_ns": 30000210776,
+      "sample_count": 170,
+      "sample_types": [
+        {
+          "type": "samples",
+          "unit": "count",
+          "total": 186,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "cpu",
+          "unit": "nanoseconds",
+          "total": 1860000000,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p2-baseline/profile/mutex.pprof",
+      "duration_ns": 30004271293,
+      "sample_count": 82,
+      "sample_types": [
+        {
+          "type": "contentions",
+          "unit": "count",
+          "total": 428,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "delay",
+          "unit": "nanoseconds",
+          "total": 13559570,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p2-baseline/profile/allocs.pprof",
+      "duration_ns": 30004081440,
+      "sample_count": 203,
+      "sample_types": [
+        {
+          "type": "alloc_objects",
+          "unit": "count",
+          "total": 1945056,
+          "queue_stack_total": 208,
+          "queue_stack_percentage": 0.010693779510718458
+        },
+        {
+          "type": "alloc_space",
+          "unit": "bytes",
+          "total": 625398082,
+          "queue_stack_total": 1584346,
+          "queue_stack_percentage": 0.25333400366904224
+        },
+        {
+          "type": "inuse_objects",
+          "unit": "count",
+          "total": 33689,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_space",
+          "unit": "bytes",
+          "total": 2855349,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p3-baseline/profile/cpu.pprof",
+      "duration_ns": 30001008641,
+      "sample_count": 163,
+      "sample_types": [
+        {
+          "type": "samples",
+          "unit": "count",
+          "total": 175,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "cpu",
+          "unit": "nanoseconds",
+          "total": 1750000000,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p3-baseline/profile/mutex.pprof",
+      "duration_ns": 30004933274,
+      "sample_count": 93,
+      "sample_types": [
+        {
+          "type": "contentions",
+          "unit": "count",
+          "total": 436,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "delay",
+          "unit": "nanoseconds",
+          "total": 16463512,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p3-baseline/profile/allocs.pprof",
+      "duration_ns": 30005008251,
+      "sample_count": 198,
+      "sample_types": [
+        {
+          "type": "alloc_objects",
+          "unit": "count",
+          "total": 1932197,
+          "queue_stack_total": 3024,
+          "queue_stack_percentage": 0.1565057807252573
+        },
+        {
+          "type": "alloc_space",
+          "unit": "bytes",
+          "total": 608401675,
+          "queue_stack_total": 1049568,
+          "queue_stack_percentage": 0.17251234556512357
+        },
+        {
+          "type": "inuse_objects",
+          "unit": "count",
+          "total": 42066,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_space",
+          "unit": "bytes",
+          "total": -920412,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p3-candidate/profile/cpu.pprof",
+      "duration_ns": 30000676733,
+      "sample_count": 170,
+      "sample_types": [
+        {
+          "type": "samples",
+          "unit": "count",
+          "total": 179,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "cpu",
+          "unit": "nanoseconds",
+          "total": 1790000000,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p3-candidate/profile/mutex.pprof",
+      "duration_ns": 30004112192,
+      "sample_count": 92,
+      "sample_types": [
+        {
+          "type": "contentions",
+          "unit": "count",
+          "total": 431,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "delay",
+          "unit": "nanoseconds",
+          "total": 21129853,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r2-p3-candidate/profile/allocs.pprof",
+      "duration_ns": 30004204109,
+      "sample_count": 209,
+      "sample_types": [
+        {
+          "type": "alloc_objects",
+          "unit": "count",
+          "total": 1951491,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "alloc_space",
+          "unit": "bytes",
+          "total": 591261089,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_objects",
+          "unit": "count",
+          "total": 61105,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_space",
+          "unit": "bytes",
+          "total": 5345418,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p3-candidate/profile/cpu.pprof",
+      "duration_ns": 30003208271,
+      "sample_count": 747,
+      "sample_types": [
+        {
+          "type": "samples",
+          "unit": "count",
+          "total": 896,
+          "queue_stack_total": 1,
+          "queue_stack_percentage": 0.11160714285714285
+        },
+        {
+          "type": "cpu",
+          "unit": "nanoseconds",
+          "total": 8960000000,
+          "queue_stack_total": 10000000,
+          "queue_stack_percentage": 0.11160714285714285
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p3-candidate/profile/mutex.pprof",
+      "duration_ns": 30007235620,
+      "sample_count": 181,
+      "sample_types": [
+        {
+          "type": "contentions",
+          "unit": "count",
+          "total": 1670,
+          "queue_stack_total": 2,
+          "queue_stack_percentage": 0.11976047904191617
+        },
+        {
+          "type": "delay",
+          "unit": "nanoseconds",
+          "total": 230889979,
+          "queue_stack_total": 6782,
+          "queue_stack_percentage": 0.0029373297314042373
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p3-candidate/profile/allocs.pprof",
+      "duration_ns": 30009160182,
+      "sample_count": 582,
+      "sample_types": [
+        {
+          "type": "alloc_objects",
+          "unit": "count",
+          "total": 7807893,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "alloc_space",
+          "unit": "bytes",
+          "total": 2086334423,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_objects",
+          "unit": "count",
+          "total": 18245,
+          "queue_stack_total": -10923,
+          "queue_stack_percentage": -59.86845711153741
+        },
+        {
+          "type": "inuse_space",
+          "unit": "bytes",
+          "total": 3234068,
+          "queue_stack_total": -524312,
+          "queue_stack_percentage": -16.21215138333517
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p3-baseline/profile/cpu.pprof",
+      "duration_ns": 30000799120,
+      "sample_count": 795,
+      "sample_types": [
+        {
+          "type": "samples",
+          "unit": "count",
+          "total": 957,
+          "queue_stack_total": 1,
+          "queue_stack_percentage": 0.10449320794148381
+        },
+        {
+          "type": "cpu",
+          "unit": "nanoseconds",
+          "total": 9570000000,
+          "queue_stack_total": 10000000,
+          "queue_stack_percentage": 0.10449320794148381
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p3-baseline/profile/mutex.pprof",
+      "duration_ns": 30025259143,
+      "sample_count": 166,
+      "sample_types": [
+        {
+          "type": "contentions",
+          "unit": "count",
+          "total": 1584,
+          "queue_stack_total": 1,
+          "queue_stack_percentage": 0.06313131313131314
+        },
+        {
+          "type": "delay",
+          "unit": "nanoseconds",
+          "total": 265093291,
+          "queue_stack_total": 1833,
+          "queue_stack_percentage": 0.0006914546924539105
+        }
+      ]
+    },
+    {
+      "file": "runs/quiet-r8-p3-baseline/profile/allocs.pprof",
+      "duration_ns": 30013388127,
+      "sample_count": 567,
+      "sample_types": [
+        {
+          "type": "alloc_objects",
+          "unit": "count",
+          "total": 8121901,
+          "queue_stack_total": 3262,
+          "queue_stack_percentage": 0.04016301109801757
+        },
+        {
+          "type": "alloc_space",
+          "unit": "bytes",
+          "total": 2251728875,
+          "queue_stack_total": 7375815,
+          "queue_stack_percentage": 0.3275623047646001
+        },
+        {
+          "type": "inuse_objects",
+          "unit": "count",
+          "total": -20458,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        },
+        {
+          "type": "inuse_space",
+          "unit": "bytes",
+          "total": 3900351,
+          "queue_stack_total": 0,
+          "queue_stack_percentage": 0
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

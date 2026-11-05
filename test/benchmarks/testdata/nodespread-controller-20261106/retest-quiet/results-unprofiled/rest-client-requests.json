@@ -1,0 +1,3244 @@
+{
+  "status": "complete",
+  "scope": "Controller REST client only",
+  "coverage": "Stress, kubelet and API-server-owned requests were not collected here",
+  "interpretation": "HTTP 409 includes optimistic conflicts; internal HTTP results are distinct from final claim outcomes",
+  "process_total_scope": "Since controller process start through final scrape, including setup and drain/cleanup preceding that scrape",
+  "periodic_interpretation": "Intervals localize REST activity; cold-start timing requires separate workload evidence",
+  "runs": [
+    {
+      "sample": "quiet-plain-p4-baseline",
+      "revision": "baseline",
+      "group": "plain60",
+      "pair": 4,
+      "slot": 1,
+      "actual_created": 452,
+      "actual_ready": 452,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T15:57:16.883457+00:00",
+          "2026-11-05T15:57:16.886245+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T15:58:16.800157+00:00",
+          "2026-11-05T15:58:16.809455+00:00"
+        ],
+        "duration_seconds": 59.92331771349927,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T15:57:16.883187+00:00",
+        "2026-11-05T15:58:16.799924+00:00"
+      ],
+      "window_requests": {
+        "total": 8553,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 4
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5327
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 451
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2250
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 520
+          }
+        ]
+      },
+      "process_total": {
+        "total": 9803,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 4
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 10
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5950
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 452
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2785
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 602
+          }
+        ]
+      }
+    },
+    {
+      "sample": "quiet-plain-p4-candidate",
+      "revision": "candidate",
+      "group": "plain60",
+      "pair": 4,
+      "slot": 2,
+      "actual_created": 452,
+      "actual_ready": 452,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T15:59:11.763097+00:00",
+          "2026-11-05T15:59:11.766695+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:00:11.678231+00:00",
+          "2026-11-05T16:00:11.683248+00:00"
+        ],
+        "duration_seconds": 59.918631716000164,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T15:59:11.762790+00:00",
+        "2026-11-05T16:00:11.678016+00:00"
+      ],
+      "window_requests": {
+        "total": 8584,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5372
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 451
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2244
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 516
+          }
+        ]
+      },
+      "process_total": {
+        "total": 9807,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5960
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 452
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2776
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 609
+          }
+        ]
+      }
+    },
+    {
+      "sample": "quiet-plain-p5-candidate",
+      "revision": "candidate",
+      "group": "plain60",
+      "pair": 5,
+      "slot": 1,
+      "actual_created": 452,
+      "actual_ready": 452,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:01:08.233993+00:00",
+          "2026-11-05T16:01:08.237276+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:02:08.148552+00:00",
+          "2026-11-05T16:02:08.153884+00:00"
+        ],
+        "duration_seconds": 59.91808760399908,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:01:08.233576+00:00",
+        "2026-11-05T16:02:08.148329+00:00"
+      ],
+      "window_requests": {
+        "total": 8524,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5376
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 451
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2244
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 453
+          }
+        ]
+      },
+      "process_total": {
+        "total": 9709,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5930
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 452
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2773
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 545
+          }
+        ]
+      }
+    },
+    {
+      "sample": "quiet-plain-p5-baseline",
+      "revision": "baseline",
+      "group": "plain60",
+      "pair": 5,
+      "slot": 2,
+      "actual_created": 452,
+      "actual_ready": 452,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:03:02.093307+00:00",
+          "2026-11-05T16:03:02.097876+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:04:02.009568+00:00",
+          "2026-11-05T16:04:02.045370+00:00"
+        ],
+        "duration_seconds": 59.934696269001506,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:03:02.093010+00:00",
+        "2026-11-05T16:04:02.009106+00:00"
+      ],
+      "window_requests": {
+        "total": 7550,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 65
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 4498
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 399
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2030
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 558
+          }
+        ]
+      },
+      "process_total": {
+        "total": 9457,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 82
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5535
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 405
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2776
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 658
+          }
+        ]
+      },
+      "periodic_intervals": [
+        {
+          "window": {
+            "start_scrape_utc": [
+              "2026-11-05T16:03:07.096477+00:00",
+              "2026-11-05T16:03:07.105614+00:00"
+            ],
+            "end_scrape_utc": [
+              "2026-11-05T16:03:12.105806+00:00",
+              "2026-11-05T16:03:12.110514+00:00"
+            ],
+            "duration_seconds": 5.00709839999945,
+            "duration_method": "monotonic scrape midpoints"
+          },
+          "requests": {
+            "total": 595,
+            "by_code_method": [
+              {
+                "code": "200",
+                "method": "GET",
+                "category": "other",
+                "requests": 0
+              },
+              {
+                "code": "200",
+                "method": "PATCH",
+                "category": "other",
+                "requests": 376
+              },
+              {
+                "code": "200",
+                "method": "PUT",
+                "category": "other",
+                "requests": 31
+              },
+              {
+                "code": "201",
+                "method": "POST",
+                "category": "other",
+                "requests": 157
+              },
+              {
+                "code": "409",
+                "method": "PATCH",
+                "category": "http_conflict_409",
+                "requests": 31
+              }
+            ]
+          }
+        },
+        {
+          "window": {
+            "start_scrape_utc": [
+              "2026-11-05T16:03:12.105806+00:00",
+              "2026-11-05T16:03:12.110514+00:00"
+            ],
+            "end_scrape_utc": [
+              "2026-11-05T16:03:17.111530+00:00",
+              "2026-11-05T16:03:17.123140+00:00"
+            ],
+            "duration_seconds": 5.009195145999911,
+            "duration_method": "monotonic scrape midpoints"
+          },
+          "requests": {
+            "total": 667,
+            "by_code_method": [
+              {
+                "code": "200",
+                "method": "GET",
+                "category": "other",
+                "requests": 0
+              },
+              {
+                "code": "200",
+                "method": "PATCH",
+                "category": "other",
+                "requests": 418
+              },
+              {
+                "code": "200",
+                "method": "PUT",
+                "category": "other",
+                "requests": 38
+              },
+              {
+                "code": "201",
+                "method": "POST",
+                "category": "other",
+                "requests": 172
+              },
+              {
+                "code": "409",
+                "method": "PATCH",
+                "category": "http_conflict_409",
+                "requests": 39
+              }
+            ]
+          }
+        },
+        {
+          "window": {
+            "start_scrape_utc": [
+              "2026-11-05T16:03:17.111530+00:00",
+              "2026-11-05T16:03:17.123140+00:00"
+            ],
+            "end_scrape_utc": [
+              "2026-11-05T16:03:22.123490+00:00",
+              "2026-11-05T16:03:22.151483+00:00"
+            ],
+            "duration_seconds": 5.020146413000475,
+            "duration_method": "monotonic scrape midpoints"
+          },
+          "requests": {
+            "total": 762,
+            "by_code_method": [
+              {
+                "code": "200",
+                "method": "GET",
+                "category": "other",
+                "requests": 0
+              },
+              {
+                "code": "200",
+                "method": "PATCH",
+                "category": "other",
+                "requests": 472
+              },
+              {
+                "code": "200",
+                "method": "PUT",
+                "category": "other",
+                "requests": 39
+              },
+              {
+                "code": "201",
+                "method": "POST",
+                "category": "other",
+                "requests": 201
+              },
+              {
+                "code": "409",
+                "method": "PATCH",
+                "category": "http_conflict_409",
+                "requests": 50
+              }
+            ]
+          }
+        },
+        {
+          "window": {
+            "start_scrape_utc": [
+              "2026-11-05T16:03:22.123490+00:00",
+              "2026-11-05T16:03:22.151483+00:00"
+            ],
+            "end_scrape_utc": [
+              "2026-11-05T16:03:27.151707+00:00",
+              "2026-11-05T16:03:27.156367+00:00"
+            ],
+            "duration_seconds": 5.016531274999579,
+            "duration_method": "monotonic scrape midpoints"
+          },
+          "requests": {
+            "total": 704,
+            "by_code_method": [
+              {
+                "code": "200",
+                "method": "GET",
+                "category": "other",
+                "requests": 0
+              },
+              {
+                "code": "200",
+                "method": "PATCH",
+                "category": "other",
+                "requests": 437
+              },
+              {
+                "code": "200",
+                "method": "PUT",
+                "category": "other",
+                "requests": 36
+              },
+              {
+                "code": "201",
+                "method": "POST",
+                "category": "other",
+                "requests": 188
+              },
+              {
+                "code": "409",
+                "method": "PATCH",
+                "category": "http_conflict_409",
+                "requests": 43
+              }
+            ]
+          }
+        },
+        {
+          "window": {
+            "start_scrape_utc": [
+              "2026-11-05T16:03:27.151707+00:00",
+              "2026-11-05T16:03:27.156367+00:00"
+            ],
+            "end_scrape_utc": [
+              "2026-11-05T16:03:32.156578+00:00",
+              "2026-11-05T16:03:32.165398+00:00"
+            ],
+            "duration_seconds": 5.00698694950006,
+            "duration_method": "monotonic scrape midpoints"
+          },
+          "requests": {
+            "total": 673,
+            "by_code_method": [
+              {
+                "code": "200",
+                "method": "GET",
+                "category": "other",
+                "requests": 0
+              },
+              {
+                "code": "200",
+                "method": "PATCH",
+                "category": "other",
+                "requests": 418
+              },
+              {
+                "code": "200",
+                "method": "PUT",
+                "category": "other",
+                "requests": 38
+              },
+              {
+                "code": "201",
+                "method": "POST",
+                "category": "other",
+                "requests": 174
+              },
+              {
+                "code": "409",
+                "method": "PATCH",
+                "category": "http_conflict_409",
+                "requests": 43
+              }
+            ]
+          }
+        },
+        {
+          "window": {
+            "start_scrape_utc": [
+              "2026-11-05T16:03:32.156578+00:00",
+              "2026-11-05T16:03:32.165398+00:00"
+            ],
+            "end_scrape_utc": [
+              "2026-11-05T16:03:37.165307+00:00",
+              "2026-11-05T16:03:37.175306+00:00"
+            ],
+            "duration_seconds": 5.010556618501141,
+            "duration_method": "monotonic scrape midpoints"
+          },
+          "requests": {
+            "total": 818,
+            "by_code_method": [
+              {
+                "code": "200",
+                "method": "GET",
+                "category": "other",
+                "requests": 0
+              },
+              {
+                "code": "200",
+                "method": "PATCH",
+                "category": "other",
+                "requests": 492
+              },
+              {
+                "code": "200",
+                "method": "PUT",
+                "category": "other",
+                "requests": 47
+              },
+              {
+                "code": "201",
+                "method": "POST",
+                "category": "other",
+                "requests": 217
+              },
+              {
+                "code": "409",
+                "method": "PATCH",
+                "category": "http_conflict_409",
+                "requests": 62
+              }
+            ]
+          }
+        },
+        {
+          "window": {
+            "start_scrape_utc": [
+              "2026-11-05T16:03:37.165307+00:00",
+              "2026-11-05T16:03:37.175306+00:00"
+            ],
+            "end_scrape_utc": [
+              "2026-11-05T16:03:42.175644+00:00",
+              "2026-11-05T16:03:42.183398+00:00"
+            ],
+            "duration_seconds": 5.009216034499332,
+            "duration_method": "monotonic scrape midpoints"
+          },
+          "requests": {
+            "total": 281,
+            "by_code_method": [
+              {
+                "code": "200",
+                "method": "GET",
+                "category": "other",
+                "requests": 0
+              },
+              {
+                "code": "200",
+                "method": "PATCH",
+                "category": "other",
+                "requests": 174
+              },
+              {
+                "code": "200",
+                "method": "PUT",
+                "category": "other",
+                "requests": 30
+              },
+              {
+                "code": "201",
+                "method": "POST",
+                "category": "other",
+                "requests": 64
+              },
+              {
+                "code": "409",
+                "method": "PATCH",
+                "category": "http_conflict_409",
+                "requests": 13
+              }
+            ]
+          }
+        },
+        {
+          "window": {
+            "start_scrape_utc": [
+              "2026-11-05T16:03:42.175644+00:00",
+              "2026-11-05T16:03:42.183398+00:00"
+            ],
+            "end_scrape_utc": [
+              "2026-11-05T16:03:47.183580+00:00",
+              "2026-11-05T16:03:47.187093+00:00"
+            ],
+            "duration_seconds": 5.005794716998935,
+            "duration_method": "monotonic scrape midpoints"
+          },
+          "requests": {
+            "total": 443,
+            "by_code_method": [
+              {
+                "code": "200",
+                "method": "GET",
+                "category": "other",
+                "requests": 0
+              },
+              {
+                "code": "200",
+                "method": "PATCH",
+                "category": "other",
+                "requests": 274
+              },
+              {
+                "code": "200",
+                "method": "PUT",
+                "category": "other",
+                "requests": 32
+              },
+              {
+                "code": "201",
+                "method": "POST",
+                "category": "other",
+                "requests": 98
+              },
+              {
+                "code": "409",
+                "method": "PATCH",
+                "category": "http_conflict_409",
+                "requests": 39
+              }
+            ]
+          }
+        },
+        {
+          "window": {
+            "start_scrape_utc": [
+              "2026-11-05T16:03:47.183580+00:00",
+              "2026-11-05T16:03:47.187093+00:00"
+            ],
+            "end_scrape_utc": [
+              "2026-11-05T16:03:52.187286+00:00",
+              "2026-11-05T16:03:52.202499+00:00"
+            ],
+            "duration_seconds": 5.0095738300005905,
+            "duration_method": "monotonic scrape midpoints"
+          },
+          "requests": {
+            "total": 734,
+            "by_code_method": [
+              {
+                "code": "200",
+                "method": "GET",
+                "category": "other",
+                "requests": 6
+              },
+              {
+                "code": "200",
+                "method": "PATCH",
+                "category": "other",
+                "requests": 410
+              },
+              {
+                "code": "200",
+                "method": "PUT",
+                "category": "other",
+                "requests": 37
+              },
+              {
+                "code": "201",
+                "method": "POST",
+                "category": "other",
+                "requests": 196
+              },
+              {
+                "code": "409",
+                "method": "PATCH",
+                "category": "http_conflict_409",
+                "requests": 85
+              }
+            ]
+          }
+        },
+        {
+          "window": {
+            "start_scrape_utc": [
+              "2026-11-05T16:03:52.187286+00:00",
+              "2026-11-05T16:03:52.202499+00:00"
+            ],
+            "end_scrape_utc": [
+              "2026-11-05T16:03:57.202796+00:00",
+              "2026-11-05T16:03:57.215380+00:00"
+            ],
+            "duration_seconds": 5.014193648499713,
+            "duration_method": "monotonic scrape midpoints"
+          },
+          "requests": {
+            "total": 838,
+            "by_code_method": [
+              {
+                "code": "200",
+                "method": "GET",
+                "category": "other",
+                "requests": 30
+              },
+              {
+                "code": "200",
+                "method": "PATCH",
+                "category": "other",
+                "requests": 423
+              },
+              {
+                "code": "200",
+                "method": "PUT",
+                "category": "other",
+                "requests": 25
+              },
+              {
+                "code": "201",
+                "method": "POST",
+                "category": "other",
+                "requests": 273
+              },
+              {
+                "code": "409",
+                "method": "PATCH",
+                "category": "http_conflict_409",
+                "requests": 87
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sample": "local-noise-baseline-s1",
+      "revision": "baseline",
+      "group": "noise-baseline",
+      "pair": 1,
+      "slot": 1,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:05:26.595980+00:00",
+          "2026-11-05T16:05:26.603944+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:07:26.523283+00:00",
+          "2026-11-05T16:07:26.528467+00:00"
+        ],
+        "duration_seconds": 119.93143721149863,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:05:26.595691+00:00",
+        "2026-11-05T16:07:26.522951+00:00"
+      ],
+      "window_requests": {
+        "total": 17008,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 8
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10503
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4526
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 4
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1061
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18226,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 8
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11079
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5072
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 4
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1147
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-noise-baseline-s2",
+      "revision": "baseline",
+      "group": "noise-baseline",
+      "pair": 1,
+      "slot": 2,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:08:33.135166+00:00",
+          "2026-11-05T16:08:33.138629+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:10:33.054860+00:00",
+          "2026-11-05T16:10:33.065010+00:00"
+        ],
+        "duration_seconds": 119.92897593050111,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:08:33.134801+00:00",
+        "2026-11-05T16:10:33.054610+00:00"
+      ],
+      "window_requests": {
+        "total": 17008,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 3
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 3
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10519
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4524
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1051
+          },
+          {
+            "code": "409",
+            "method": "POST",
+            "category": "http_conflict_409",
+            "requests": 2
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18247,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 3
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 12
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11118
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5057
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1147
+          },
+          {
+            "code": "409",
+            "method": "POST",
+            "category": "http_conflict_409",
+            "requests": 3
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-long8-p1-baseline",
+      "revision": "baseline",
+      "group": "long8",
+      "pair": 1,
+      "slot": 1,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:11:35.219382+00:00",
+          "2026-11-05T16:11:35.223332+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:13:35.139750+00:00",
+          "2026-11-05T16:13:35.146152+00:00"
+        ],
+        "duration_seconds": 119.92771206349971,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:11:35.219063+00:00",
+        "2026-11-05T16:13:35.138606+00:00"
+      ],
+      "window_requests": {
+        "total": 17264,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10822
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4508
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1027
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18538,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11453
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5051
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1117
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-long8-p1-candidate",
+      "revision": "candidate",
+      "group": "long8",
+      "pair": 1,
+      "slot": 2,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:15:01.795880+00:00",
+          "2026-11-05T16:15:01.799356+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:17:01.715556+00:00",
+          "2026-11-05T16:17:01.720749+00:00"
+        ],
+        "duration_seconds": 119.92623255999933,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:15:01.795574+00:00",
+        "2026-11-05T16:17:01.715375+00:00"
+      ],
+      "window_requests": {
+        "total": 16898,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 7
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10529
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4473
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 978
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18282,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 7
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11222
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5057
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1075
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-mid4-p1-candidate",
+      "revision": "candidate",
+      "group": "mid4",
+      "pair": 1,
+      "slot": 1,
+      "actual_created": 452,
+      "actual_ready": 452,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:18:04.522362+00:00",
+          "2026-11-05T16:18:04.525679+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:20:04.352127+00:00",
+          "2026-11-05T16:20:04.355654+00:00"
+        ],
+        "duration_seconds": 119.83475046100102,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:18:04.522063+00:00",
+        "2026-11-05T16:20:04.351941+00:00"
+      ],
+      "window_requests": {
+        "total": 8627,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5479
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 451
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2250
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 447
+          }
+        ]
+      },
+      "process_total": {
+        "total": 9844,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 6077
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 452
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2773
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 533
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-mid4-p1-baseline",
+      "revision": "baseline",
+      "group": "mid4",
+      "pair": 1,
+      "slot": 2,
+      "actual_created": 452,
+      "actual_ready": 452,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:20:58.965355+00:00",
+          "2026-11-05T16:20:58.968715+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:22:58.793499+00:00",
+          "2026-11-05T16:22:58.796559+00:00"
+        ],
+        "duration_seconds": 119.83502252049948,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:20:58.965108+00:00",
+        "2026-11-05T16:22:58.793288+00:00"
+      ],
+      "window_requests": {
+        "total": 8662,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5522
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 451
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2252
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 437
+          }
+        ]
+      },
+      "process_total": {
+        "total": 9887,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 6140
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 452
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2773
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 513
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-long8-p2-candidate",
+      "revision": "candidate",
+      "group": "long8",
+      "pair": 2,
+      "slot": 1,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:23:51.552448+00:00",
+          "2026-11-05T16:23:51.555980+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:25:51.472163+00:00",
+          "2026-11-05T16:25:51.478257+00:00"
+        ],
+        "duration_seconds": 119.92762888700054,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:23:51.552156+00:00",
+        "2026-11-05T16:25:51.471261+00:00"
+      ],
+      "window_requests": {
+        "total": 17202,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 6
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10782
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4533
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 4
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 971
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18447,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 6
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11397
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5066
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 4
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1058
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-long8-p2-baseline",
+      "revision": "baseline",
+      "group": "long8",
+      "pair": 2,
+      "slot": 2,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:26:53.096378+00:00",
+          "2026-11-05T16:26:53.099122+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:28:53.016305+00:00",
+          "2026-11-05T16:28:53.024243+00:00"
+        ],
+        "duration_seconds": 119.92907327199828,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:26:53.096103+00:00",
+        "2026-11-05T16:28:53.015931+00:00"
+      ],
+      "window_requests": {
+        "total": 17224,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 5
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10808
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4528
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 974
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18470,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 5
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 10
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11436
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5063
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1047
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-long8-p3-baseline",
+      "revision": "baseline",
+      "group": "long8",
+      "pair": 3,
+      "slot": 1,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:29:59.312691+00:00",
+          "2026-11-05T16:29:59.316407+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:31:59.236484+00:00",
+          "2026-11-05T16:31:59.246438+00:00"
+        ],
+        "duration_seconds": 119.9327144914987,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:29:59.312301+00:00",
+        "2026-11-05T16:31:59.232317+00:00"
+      ],
+      "window_requests": {
+        "total": 16994,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 5
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10502
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4528
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1051
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18242,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 5
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11116
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5063
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1140
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-long8-p3-candidate",
+      "revision": "candidate",
+      "group": "long8",
+      "pair": 3,
+      "slot": 2,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:33:01.329623+00:00",
+          "2026-11-05T16:33:01.332845+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:35:01.249554+00:00",
+          "2026-11-05T16:35:01.257532+00:00"
+        ],
+        "duration_seconds": 119.92855782999868,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:33:01.329296+00:00",
+        "2026-11-05T16:35:01.249174+00:00"
+      ],
+      "window_requests": {
+        "total": 17063,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 7
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10567
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4535
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1046
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18322,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 7
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11205
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5069
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 3
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1122
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-noise-candidate-s1",
+      "revision": "candidate",
+      "group": "noise-candidate",
+      "pair": 1,
+      "slot": 1,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:36:04.844987+00:00",
+          "2026-11-05T16:36:04.849874+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:38:04.764409+00:00",
+          "2026-11-05T16:38:04.771896+00:00"
+        ],
+        "duration_seconds": 119.92859283500184,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:36:04.844668+00:00",
+        "2026-11-05T16:38:04.763289+00:00"
+      ],
+      "window_requests": {
+        "total": 17202,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 4
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10746
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4521
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1023
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18457,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 4
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11375
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5060
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1100
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-noise-candidate-s2",
+      "revision": "candidate",
+      "group": "noise-candidate",
+      "pair": 1,
+      "slot": 2,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:39:08.442154+00:00",
+          "2026-11-05T16:39:08.445403+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:41:08.359929+00:00",
+          "2026-11-05T16:41:08.383842+00:00"
+        ],
+        "duration_seconds": 119.93713641300019,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:39:08.441817+00:00",
+        "2026-11-05T16:41:08.359581+00:00"
+      ],
+      "window_requests": {
+        "total": 17147,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 5
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10751
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4495
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 989
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18453,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 5
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11394
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5058
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1079
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-long8-p4-candidate",
+      "revision": "candidate",
+      "group": "long8",
+      "pair": 4,
+      "slot": 1,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:42:33.580061+00:00",
+          "2026-11-05T16:42:33.582843+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:44:33.502271+00:00",
+          "2026-11-05T16:44:33.511866+00:00"
+        ],
+        "duration_seconds": 119.93243690350027,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:42:33.579691+00:00",
+        "2026-11-05T16:44:33.501576+00:00"
+      ],
+      "window_requests": {
+        "total": 17070,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 10
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10555
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 900
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4514
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1088
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18335,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 19
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11191
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 901
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5051
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1170
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-long8-p4-baseline",
+      "revision": "baseline",
+      "group": "long8",
+      "pair": 4,
+      "slot": 2,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:45:37.152812+00:00",
+          "2026-11-05T16:45:37.155658+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:47:37.045988+00:00",
+          "2026-11-05T16:47:37.054640+00:00"
+        ],
+        "duration_seconds": 119.92929794449992,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:45:37.152472+00:00",
+        "2026-11-05T16:47:37.045467+00:00"
+      ],
+      "window_requests": {
+        "total": 17161,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10760
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4515
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 976
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18412,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11375
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5054
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 2
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1063
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-mid4-p2-baseline",
+      "revision": "baseline",
+      "group": "mid4",
+      "pair": 2,
+      "slot": 1,
+      "actual_created": 452,
+      "actual_ready": 452,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:48:38.619873+00:00",
+          "2026-11-05T16:48:38.623086+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:50:38.451712+00:00",
+          "2026-11-05T16:50:38.454745+00:00"
+        ],
+        "duration_seconds": 119.83491265699922,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:48:38.619585+00:00",
+        "2026-11-05T16:50:38.451525+00:00"
+      ],
+      "window_requests": {
+        "total": 8736,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 3
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5511
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 451
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2260
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 510
+          }
+        ]
+      },
+      "process_total": {
+        "total": 9936,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 3
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 6097
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 452
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2782
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 592
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-mid4-p2-candidate",
+      "revision": "candidate",
+      "group": "mid4",
+      "pair": 2,
+      "slot": 2,
+      "actual_created": 452,
+      "actual_ready": 452,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:51:35.510209+00:00",
+          "2026-11-05T16:51:35.512796+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:53:35.341605+00:00",
+          "2026-11-05T16:53:35.345216+00:00"
+        ],
+        "duration_seconds": 119.83590709250166,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:51:35.509939+00:00",
+        "2026-11-05T16:53:35.341150+00:00"
+      ],
+      "window_requests": {
+        "total": 8728,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 5578
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 451
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2248
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 451
+          }
+        ]
+      },
+      "process_total": {
+        "total": 9935,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 6161
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 452
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 2773
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 540
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-long8-p5-baseline",
+      "revision": "baseline",
+      "group": "long8",
+      "pair": 5,
+      "slot": 1,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:54:28.992798+00:00",
+          "2026-11-05T16:54:28.995739+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:56:28.914155+00:00",
+          "2026-11-05T16:56:28.919992+00:00"
+        ],
+        "duration_seconds": 119.92749292850021,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:54:28.992529+00:00",
+        "2026-11-05T16:56:28.913887+00:00"
+      ],
+      "window_requests": {
+        "total": 17261,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 7
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10799
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4533
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 3
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1013
+          },
+          {
+            "code": "409",
+            "method": "POST",
+            "category": "http_conflict_409",
+            "requests": 0
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18498,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 7
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11400
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5069
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 3
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1102
+          },
+          {
+            "code": "409",
+            "method": "POST",
+            "category": "http_conflict_409",
+            "requests": 1
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-long8-p5-candidate",
+      "revision": "candidate",
+      "group": "long8",
+      "pair": 5,
+      "slot": 2,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T16:57:33.005090+00:00",
+          "2026-11-05T16:57:33.009130+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T16:59:32.912966+00:00",
+          "2026-11-05T16:59:32.919400+00:00"
+        ],
+        "duration_seconds": 119.92791464599941,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T16:57:33.004422+00:00",
+        "2026-11-05T16:59:32.912691+00:00"
+      ],
+      "window_requests": {
+        "total": 17156,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 4
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10672
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4528
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1044
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18409,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 4
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 10
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11304
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5060
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 1
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1123
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-long8-p6-candidate",
+      "revision": "candidate",
+      "group": "long8",
+      "pair": 6,
+      "slot": 1,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T17:00:38.687483+00:00",
+          "2026-11-05T17:00:38.690356+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T17:02:38.607915+00:00",
+          "2026-11-05T17:02:38.619073+00:00"
+        ],
+        "duration_seconds": 119.9300953564998,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T17:00:38.687174+00:00",
+        "2026-11-05T17:02:38.607526+00:00"
+      ],
+      "window_requests": {
+        "total": 17234,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 7
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10803
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4533
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 4
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 981
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18460,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 7
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11403
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5069
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 4
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1061
+          }
+        ]
+      }
+    },
+    {
+      "sample": "local-long8-p6-baseline",
+      "revision": "baseline",
+      "group": "long8",
+      "pair": 6,
+      "slot": 2,
+      "actual_created": 907,
+      "actual_ready": 907,
+      "actual_failed": 0,
+      "window": {
+        "start_scrape_utc": [
+          "2026-11-05T17:03:51.754413+00:00",
+          "2026-11-05T17:03:51.758264+00:00"
+        ],
+        "end_scrape_utc": [
+          "2026-11-05T17:05:51.675899+00:00",
+          "2026-11-05T17:05:51.682761+00:00"
+        ],
+        "duration_seconds": 119.9285266400002,
+        "duration_method": "monotonic scrape midpoints"
+      },
+      "traffic_utc": [
+        "2026-11-05T17:03:51.754064+00:00",
+        "2026-11-05T17:05:51.675517+00:00"
+      ],
+      "window_requests": {
+        "total": 17172,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 5
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 0
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 10744
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 906
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 4528
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 3
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 986
+          }
+        ]
+      },
+      "process_total": {
+        "total": 18331,
+        "by_code_method": [
+          {
+            "code": "200",
+            "method": "DELETE",
+            "category": "other",
+            "requests": 5
+          },
+          {
+            "code": "200",
+            "method": "GET",
+            "category": "other",
+            "requests": 9
+          },
+          {
+            "code": "200",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 11238
+          },
+          {
+            "code": "200",
+            "method": "PUT",
+            "category": "other",
+            "requests": 907
+          },
+          {
+            "code": "201",
+            "method": "POST",
+            "category": "other",
+            "requests": 5063
+          },
+          {
+            "code": "404",
+            "method": "PATCH",
+            "category": "other",
+            "requests": 3
+          },
+          {
+            "code": "409",
+            "method": "PATCH",
+            "category": "http_conflict_409",
+            "requests": 1106
+          }
+        ]
+      }
+    }
+  ]
+}

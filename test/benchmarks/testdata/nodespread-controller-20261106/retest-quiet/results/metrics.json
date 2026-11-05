@@ -1,0 +1,7415 @@
+[
+  {
+    "file": "runs/quiet-r2-p1-baseline/metrics-final.prom",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p1-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 98
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 8563776
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1941357360
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1605451
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 7284796
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3942128
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 8563776
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 13877248
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 13090816
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 57498
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 10870784
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 26968064
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891551.0151172
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 7342294
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 236320
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 359040
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 14180866
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 752005
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2392064
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2392064
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 36034824
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 7.13
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1824
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 98
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 1003
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 160
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p1-baseline/profile/metrics-start.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p1-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 12
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-baseline",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-baseline",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-baseline",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-baseline",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 9453424
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 828631736
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1531347
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 3038848
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3863280
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 9453424
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 9355264
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 13549568
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 54033
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 5578752
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 22904832
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891492.376126
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 3092881
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 240480
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 293760
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 16713674
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 970237
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2260992
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2260992
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 31840520
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 3.41
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 743
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 12
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 572
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 79
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p1-baseline/profile/metrics-end.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p1-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 61
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-baseline",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-baseline",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-baseline",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-baseline",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 17706496
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1469390536
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1576483
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 5388827
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3940080
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 17706496
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 4259840
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 22904832
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 103503
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 2564096
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 27164672
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891522.6392908
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 5492330
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 320960
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 359040
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 23912730
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 783021
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2195456
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2195456
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 36034824
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 5.39
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1357
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 61
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 817
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 125
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p1-candidate/metrics-final.prom",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p1-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 98
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 6804232
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1959816392
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1613723
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 7359617
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3969264
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 6804232
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 19685376
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 11804672
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 43347
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 15384576
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 31490048
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891657.1887696
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 7402964
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 237760
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 342720
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 13995122
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 995061
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2064384
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2064384
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40491272
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 7.38
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1815
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 98
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 1003
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 169
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p1-candidate/profile/metrics-start.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p1-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 12
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-candidate",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-candidate",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-candidate",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-candidate",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 11781608
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 836611872
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1541331
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 3061667
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3856112
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 11781608
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 11395072
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 15802368
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 57669
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 7888896
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 27197440
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891598.1906874
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 3119336
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 261760
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 310080
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 21059218
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 688957
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2162688
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2162688
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 35772680
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 3.54
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 743
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 12
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 572
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 88
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p1-candidate/profile/metrics-end.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p1-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 61
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-candidate",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-candidate",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-candidate",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p1-candidate",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 15152376
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1482894512
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1589451
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 5432876
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3967216
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 15152376
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 11321344
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 20135936
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 103856
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 8577024
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 31457280
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891628.4462168
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 5536732
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 303040
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 342720
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 21850178
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 759237
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40229128
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 5.52
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1352
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 61
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 817
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 130
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p1-candidate/metrics-final.prom",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p1-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 452
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 12488120
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 4943779328
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1777083
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 20385834
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4076800
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 12488120
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 18071552
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 16957440
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 91054
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 16072704
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 35028992
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891762.2092335
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 20476888
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 315040
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 424320
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 17091074
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 974357
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2719744
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2719744
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 45017368
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 23.65
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "DELETE"
+        },
+        "value": 2
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 6007
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 452
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 2779
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "404",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 572
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p1-candidate/profile/metrics-start.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p1-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 61
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-candidate",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-candidate",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 5
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-candidate",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 123
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-candidate",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 9021264
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1127702888
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1581779
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 4565968
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3860208
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 9021264
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 13000704
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 14229504
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 55459
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 8159232
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 27230208
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891703.7183366
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 4621427
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 263040
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 326400
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 17986562
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 890237
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2129920
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2129920
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 36034824
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 5.28
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1280
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 61
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 812
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 148
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p1-candidate/profile/metrics-end.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p1-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 295
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-candidate",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-candidate",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 6
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-candidate",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 122
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-candidate",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 15611664
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 3465341696
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1724123
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 14103959
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4072704
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 15611664
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 13901824
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 21553152
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 89116
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 8421376
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 35454976
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891733.8713908
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 14193075
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 346240
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 424320
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 22723658
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 769269
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2293760
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2293760
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 44755224
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 15.99
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "DELETE"
+        },
+        "value": 1
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 4101
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 295
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 1983
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 394
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p1-baseline/metrics-final.prom",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p1-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 452
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 9804952
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 4851498936
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1777795
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 20132325
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4045552
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 9804952
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 24395776
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 15253504
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 67384
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 20332544
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 39649280
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891875.6631496
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 20199709
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 280160
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 440640
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 16948434
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 656781
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2293760
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2293760
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 48879880
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 24.42
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "DELETE"
+        },
+        "value": 2
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 10
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 5984
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 452
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 2779
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 576
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p1-baseline/profile/metrics-start.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p1-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 61
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-baseline",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-baseline",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-baseline",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-baseline",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 9999896
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1375193872
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1581611
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 5140082
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3870960
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 9999896
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 12115968
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 15147008
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 58369
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 7725056
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 27262976
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891816.4893663
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 5198451
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 269440
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 326400
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 18854810
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 1141797
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 36296968
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 5.68
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1327
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 61
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 817
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 137
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p1-baseline/profile/metrics-end.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p1-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 293
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-baseline",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-baseline",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 13
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-baseline",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 115
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p1-baseline",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 21028136
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 3306484152
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1711507
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 13592372
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4076272
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 21028136
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 13008896
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 26607616
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 130466
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 6201344
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 39616512
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891846.6801422
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 13722838
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 418400
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 440640
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 27076026
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 725117
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2293760
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2293760
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 48879880
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 16.11
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 10
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 4047
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 294
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 1965
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 408
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p2-baseline/metrics-final.prom",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p2-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 452
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 10163352
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 4843289776
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1782939
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 20101858
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4140800
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 10163352
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 15179776
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 16015360
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 69886
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 11288576
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 31195136
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892008.513126
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 20171744
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 311040
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 440640
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 17109682
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 1150325
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2359296
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2359296
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 41085208
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 23.25
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 5977
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 452
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 2773
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 621
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p2-baseline/profile/metrics-start.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p2-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 61
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-baseline",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-baseline",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 6
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-baseline",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 122
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-baseline",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 9897784
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1370872608
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1577427
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 5135931
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3887344
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 9897784
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 8716288
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 14352384
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 58779
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 5382144
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 23068672
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891949.482264
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 5194710
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 269600
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 326400
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 16900186
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 605309
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 31578376
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 5.62
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1342
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 61
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 812
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 159
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p2-baseline/profile/metrics-end.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p2-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 293
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-baseline",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-baseline",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 23
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-baseline",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 105
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-baseline",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 11310240
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 3370692752
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1711115
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 13784589
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4140800
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 11310240
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 12189696
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 19202048
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 63878
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 5824512
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 31391744
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793891979.747654
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 13848467
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 349440
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 440640
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 22972730
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 960005
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2162688
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2162688
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40823064
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 15.03
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 4050
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 294
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 1955
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 443
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p2-candidate/metrics-final.prom",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p2-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 452
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 9821248
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 4972080240
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1772563
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 20513440
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3962608
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 9821248
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 16039936
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 15122432
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 67591
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 11460608
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 31162368
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892122.970499
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 20581031
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 290080
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 440640
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 16955834
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 1007101
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2392064
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2392064
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40753416
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 23.99
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 6039
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 452
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 2773
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "404",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 586
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p2-candidate/profile/metrics-start.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p2-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 61
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-candidate",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-candidate",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 8
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-candidate",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 120
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-candidate",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 9170424
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1127425320
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1582635
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 4603582
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3868400
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 9170424
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 8421376
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 14647296
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 55121
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 3629056
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 23068672
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892063.7335768
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 4658703
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 272640
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 326400
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 18802602
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 881189
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 31840520
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 5.62
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1301
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 61
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 810
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 164
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p2-candidate/profile/metrics-end.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p2-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 295
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-candidate",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-candidate",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 5
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-candidate",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 123
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p2-candidate",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 12515240
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 3405934592
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1707635
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 14019257
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3962608
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 12515240
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 12820480
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 18538496
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 72877
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 6332416
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 31358976
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892093.9620893
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 14092134
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 343520
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 440640
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 21396282
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 809885
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2195456
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2195456
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40491272
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 16.26
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 4130
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 295
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 1980
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 412
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p2-candidate/metrics-final.prom",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p2-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 98
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 10173120
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1946914464
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1608171
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 7296955
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3951344
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 10173120
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 12591104
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 14082048
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 70722
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 10772480
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 26673152
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892237.773713
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 7367677
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 253280
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 342720
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 14436354
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 756389
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2686976
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2686976
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 36034824
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 7.72
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1822
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 98
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 1003
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 167
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p2-candidate/profile/metrics-start.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p2-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 12
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-candidate",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-candidate",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-candidate",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-candidate",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 9248368
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 838372072
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1539675
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 3069050
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3824880
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 9248368
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 9404416
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 13697024
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 53631
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 5390336
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 23101440
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892179.5864632
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 3122681
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 256000
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 310080
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 16814858
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 983989
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2064384
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2064384
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 31840520
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 3.67
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 741
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 12
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 572
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 85
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p2-candidate/profile/metrics-end.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p2-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 61
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-candidate",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-candidate",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-candidate",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-candidate",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 16770608
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1480441368
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1582555
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 5432419
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3982064
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 16770608
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 5324800
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 21905408
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 104016
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 3252224
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 27230208
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892209.8301873
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 5536435
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 319840
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 326400
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 21610922
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 800373
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 36034824
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 5.77
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1363
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 61
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 817
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 132
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p2-baseline/metrics-final.prom",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p2-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 98
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 10230344
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1548415360
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1611099
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 6380281
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4026112
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 10230344
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 16384000
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 14417920
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 71176
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 13385728
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 30801920
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892351.5268414
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 6451457
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 282240
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 359040
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 14347386
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 994165
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2752512
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2752512
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40560920
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 6.21
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1703
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 98
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 1003
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 201
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p2-baseline/profile/metrics-start.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p2-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 12
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-baseline",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-baseline",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-baseline",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-baseline",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 12521152
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 422222560
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1535299
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 2111774
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3976960
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 12521152
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 10002432
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 17129472
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 59061
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 8986624
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 27131904
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892293.3869972
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 2170835
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 285440
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 342720
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 18318586
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 873293
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2228224
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2228224
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 36104472
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 2.26
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 635
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 12
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 572
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 124
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p2-baseline/profile/metrics-end.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p2-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 61
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-baseline",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-baseline",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-baseline",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p2-baseline",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 14847336
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1066986568
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1582235
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 4481455
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4026112
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 14847336
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 10993664
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 20463616
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 102228
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 7249920
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 31457280
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892323.6466265
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 4583683
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 308800
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 359040
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 22116618
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 1023029
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40560920
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 4.34
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1245
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 61
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 817
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 167
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p3-baseline/metrics-final.prom",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p3-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 98
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 9718416
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1892800032
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1611155
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 7175330
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3974384
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 9718416
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 17170432
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 13828096
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 66976
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 15302656
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 30998528
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892456.9756012
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 7242306
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 262720
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 342720
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 14298082
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 730365
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2555904
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2555904
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40229128
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 7.39
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1819
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 98
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 1003
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 166
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p3-baseline/profile/metrics-start.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p3-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 12
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-baseline",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-baseline",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-baseline",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-baseline",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 9491392
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 796174224
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1539675
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 2976873
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3844336
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 9491392
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 13320192
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 13910016
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 54245
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 8314880
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 27230208
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892398.7255285
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 3031118
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 268000
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 310080
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 17244250
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 964533
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2129920
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2129920
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 36034824
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 3.59
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 743
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 12
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 572
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 85
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p3-baseline/profile/metrics-end.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p3-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 61
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-baseline",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-baseline",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-baseline",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-baseline",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 19604584
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1423722064
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1585403
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 5291105
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4039920
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 19604584
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 6873088
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 24518656
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 111153
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 4825088
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 31391744
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892428.9741216
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 5402258
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 336480
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 342720
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 25488866
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 756117
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40229128
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 5.65
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1354
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 61
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 817
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 132
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p3-candidate/metrics-final.prom",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p3-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 98
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 8875856
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1942146112
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1610667
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 7284559
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4021504
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 8875856
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 18202624
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 13090816
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 60065
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 15376384
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 31293440
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892562.2971256
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 7344624
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 244800
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 326400
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 14193058
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 1031845
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2260992
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2260992
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40560920
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 7.25
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1808
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 98
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 1003
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 165
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p3-candidate/profile/metrics-start.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p3-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 12
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-candidate",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-candidate",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-candidate",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-candidate",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 13387800
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 824145944
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1541083
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 3013221
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3826416
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 13387800
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 6537216
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 16531456
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 63601
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 5439488
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 23068672
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892503.9804897
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 3076822
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 276000
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 293760
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 17885762
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 997365
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2097152
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 31840520
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 3.42
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 734
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 12
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 572
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 81
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r2-p3-candidate/profile/metrics-end.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r2-p3-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 61
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-candidate",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-candidate",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 1
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-candidate",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 127
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r2-p3-candidate",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 16873112
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1470334696
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1584075
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 5393337
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4006144
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 16873112
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 9166848
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 22388736
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 104210
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 5472256
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 31555584
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892534.2219346
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 5497547
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 321280
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 326400
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 23541906
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 1073797
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 1998848
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 1998848
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40560920
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 5.44
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1345
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 61
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 817
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 126
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p3-candidate/metrics-final.prom",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p3-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 452
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 11682272
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 4940306624
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1768123
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 20355809
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4098816
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 11682272
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 18579456
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 16482304
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 83070
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 16007168
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 35061760
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892671.8775818
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 20438879
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 289600
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 408000
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 16992610
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 977621
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2686976
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2686976
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 45017368
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 23.56
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "DELETE"
+        },
+        "value": 3
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 10
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 6012
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 452
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 2782
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 557
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p3-candidate/profile/metrics-start.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p3-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 61
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-candidate",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-candidate",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 4
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-candidate",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 124
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-candidate",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 14212720
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1315612768
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1581699
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 4988184
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3970304
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 14212720
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 9183232
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 17915904
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 69444
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 8445952
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 27099136
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892612.964577
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 5057628
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 268960
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 342720
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 18784658
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 866317
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2228224
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2228224
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 36104472
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 5.66
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1325
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 61
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 814
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 143
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p3-candidate/profile/metrics-end.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p3-candidate",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 295
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-candidate",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-candidate",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 6
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-candidate",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 122
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-candidate",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 14142736
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 3416674736
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1707491
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 13976894
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4098816
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 14142736
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 15630336
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 19824640
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 79114
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 13279232
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 35454976
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892643.1626322
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 14056008
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 322560
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 408000
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 19753898
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 1038253
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2293760
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2293760
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 45017368
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 15.72
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "DELETE"
+        },
+        "value": 3
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 4106
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 295
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 1988
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 396
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p3-baseline/metrics-final.prom",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p3-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 452
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 9156312
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 4889318392
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1775763
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 20275321
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4081408
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 9156312
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 16883712
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 14409728
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 62774
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 11575296
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 31293440
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892784.8773913
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 20338095
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 287040
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 424320
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 16873186
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 708925
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2260992
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2260992
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40560920
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 23.69
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "DELETE"
+        },
+        "value": 1
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 6006
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 452
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 2776
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 597
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p3-baseline/profile/metrics-start.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p3-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 61
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-baseline",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-baseline",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 5
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-baseline",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 123
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-baseline",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 12456864
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 1089035256
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1583043
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 4467164
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 3948288
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 12456864
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 6701056
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 16171008
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 68967
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 5005312
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 22872064
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892725.3690321
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 4536131
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 273760
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 326400
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 17669170
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 1132685
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2293760
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2293760
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 32172312
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 5.43
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 1310
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 61
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 812
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 151
+      }
+    ]
+  },
+  {
+    "file": "runs/quiet-r8-p3-baseline/profile/metrics-end.txt",
+    "samples": [
+      {
+        "name": "agent_sandbox_claim_creation_total",
+        "labels": {
+          "created_by": "unknown",
+          "launch_type": "warm",
+          "namespace": "np2179-quiet-r8-p3-baseline",
+          "pod_condition": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 295
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-baseline",
+          "sandbox_status": "failed",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-baseline",
+          "sandbox_status": "pending",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 4
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-baseline",
+          "sandbox_status": "ready",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 123
+      },
+      {
+        "name": "agent_sandbox_warmpool_size",
+        "labels": {
+          "namespace": "np2179-quiet-r8-p3-baseline",
+          "sandbox_status": "succeeded",
+          "sandbox_template": "p1-stemplate",
+          "warmpool_name": "p1-spool"
+        },
+        "value": 0
+      },
+      {
+        "name": "go_memstats_alloc_bytes",
+        "labels": {},
+        "value": 13994216
+      },
+      {
+        "name": "go_memstats_alloc_bytes_total",
+        "labels": {},
+        "value": 3369629784
+      },
+      {
+        "name": "go_memstats_buck_hash_sys_bytes",
+        "labels": {},
+        "value": 1708667
+      },
+      {
+        "name": "go_memstats_frees_total",
+        "labels": {},
+        "value": 13887472
+      },
+      {
+        "name": "go_memstats_gc_sys_bytes",
+        "labels": {},
+        "value": 4081408
+      },
+      {
+        "name": "go_memstats_heap_alloc_bytes",
+        "labels": {},
+        "value": 13994216
+      },
+      {
+        "name": "go_memstats_heap_idle_bytes",
+        "labels": {},
+        "value": 11755520
+      },
+      {
+        "name": "go_memstats_heap_inuse_bytes",
+        "labels": {},
+        "value": 19505152
+      },
+      {
+        "name": "go_memstats_heap_objects",
+        "labels": {},
+        "value": 78180
+      },
+      {
+        "name": "go_memstats_heap_released_bytes",
+        "labels": {},
+        "value": 6373376
+      },
+      {
+        "name": "go_memstats_heap_sys_bytes",
+        "labels": {},
+        "value": 31260672
+      },
+      {
+        "name": "go_memstats_last_gc_time_seconds",
+        "labels": {},
+        "value": 1793892755.5646887
+      },
+      {
+        "name": "go_memstats_mallocs_total",
+        "labels": {},
+        "value": 13965652
+      },
+      {
+        "name": "go_memstats_mcache_inuse_bytes",
+        "labels": {},
+        "value": 9184
+      },
+      {
+        "name": "go_memstats_mcache_sys_bytes",
+        "labels": {},
+        "value": 16072
+      },
+      {
+        "name": "go_memstats_mspan_inuse_bytes",
+        "labels": {},
+        "value": 309440
+      },
+      {
+        "name": "go_memstats_mspan_sys_bytes",
+        "labels": {},
+        "value": 424320
+      },
+      {
+        "name": "go_memstats_next_gc_bytes",
+        "labels": {},
+        "value": 19619450
+      },
+      {
+        "name": "go_memstats_other_sys_bytes",
+        "labels": {},
+        "value": 776021
+      },
+      {
+        "name": "go_memstats_stack_inuse_bytes",
+        "labels": {},
+        "value": 2293760
+      },
+      {
+        "name": "go_memstats_stack_sys_bytes",
+        "labels": {},
+        "value": 2293760
+      },
+      {
+        "name": "go_memstats_sys_bytes",
+        "labels": {},
+        "value": 40560920
+      },
+      {
+        "name": "process_cpu_seconds_total",
+        "labels": {},
+        "value": 16.1
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "DELETE"
+        },
+        "value": 1
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "GET"
+        },
+        "value": 9
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 4110
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "200",
+          "host": "127.0.0.1:44812",
+          "method": "PUT"
+        },
+        "value": 295
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "201",
+          "host": "127.0.0.1:44812",
+          "method": "POST"
+        },
+        "value": 1983
+      },
+      {
+        "name": "rest_client_requests_total",
+        "labels": {
+          "code": "409",
+          "host": "127.0.0.1:44812",
+          "method": "PATCH"
+        },
+        "value": 419
+      }
+    ]
+  }
+]

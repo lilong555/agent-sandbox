@@ -1,0 +1,40 @@
+{
+  "revision": "candidate",
+  "commit": "a87fa000ec96c8e3d9be493da5c6e6e2048b37ad",
+  "image": "node:22-alpine",
+  "pool": 128,
+  "claims_per_second": 8,
+  "seconds": 120,
+  "profile_seconds": 0,
+  "profile_delay": 0,
+  "gomaxprocs": 4,
+  "cpus": [
+    6,
+    8,
+    10,
+    12
+  ],
+  "seed": [
+    0,
+    0
+  ],
+  "controller_args": [
+    "--leader-elect=false",
+    "--extensions",
+    "--metrics-bind-address=127.0.0.1:18080",
+    "--health-probe-bind-address=127.0.0.1:18081",
+    "--metrics-secure-serving=false",
+    "--pprof-mutex-profile-fraction=0",
+    "--pprof-block-profile-rate=0",
+    "--sandbox-concurrent-workers=100",
+    "--sandbox-claim-concurrent-workers=50",
+    "--sandbox-warm-pool-concurrent-workers=1",
+    "--sandbox-template-concurrent-workers=1",
+    "--sandbox-warm-pool-max-batch-size=32",
+    "--sandbox-warm-pool-max-refill-rate=16"
+  ],
+  "profile_enabled": false,
+  "group": "noise-candidate",
+  "metrics_interval_seconds": 5,
+  "stress_gomaxprocs": null
+}

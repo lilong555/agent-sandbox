@@ -1,0 +1,306 @@
+{
+  "runID": "20261106-003554",
+  "startTime": "2026-11-06T00:35:56.650816073+08:00",
+  "endTime": "2026-11-06T00:38:14.64496155+08:00",
+  "config": {
+    "namespace": "np2179-local-noise-candidate-s1",
+    "outputDir": "workload",
+    "image": "node:22-alpine",
+    "cleanup": true,
+    "timeoutNanos": 480000000000,
+    "perSandboxTimeoutNanos": 120000000000,
+    "createConcurrency": 20,
+    "phases": [
+      "claims-warm-sustained"
+    ],
+    "fillPerNode": 10,
+    "probeCount": 20,
+    "probeConcurrency": 1,
+    "probeIntervalNanos": 0,
+    "throughputCount": 200,
+    "throughputMinSeconds": 45,
+    "claimsWarmCount": 300,
+    "sustainedRate": 8,
+    "sustainedSeconds": 120,
+    "claimDwellNanos": 1000000000,
+    "sustainedNamespaces": 1,
+    "sustainedPoolHeadroomNanos": 16000000000,
+    "sustainedLifecycleBudgetNanos": 5000000000,
+    "clientConnections": 4,
+    "collectMetrics": false,
+    "metricsIntervalNanos": 15000000000,
+    "profileAPIServer": false,
+    "profileController": false
+  },
+  "cluster": {
+    "kubernetesVersion": "v1.35.8",
+    "nodes": 2,
+    "podCapacity": 600,
+    "preexistingPods": 4
+  },
+  "phases": [
+    {
+      "phaseNumber": 1,
+      "name": "claims-warm-sustained",
+      "kind": "claims-warm-sustained",
+      "requested": 960,
+      "created": 907,
+      "ready": 907,
+      "failed": 0,
+      "durationSeconds": 136.0025561,
+      "startOffsetSeconds": 1.2264e-05,
+      "latency": {
+        "createAck": {
+          "count": 907,
+          "minMs": 3.246839,
+          "meanMs": 13.725461,
+          "p50Ms": 10.050889,
+          "p90Ms": 23.974702,
+          "p95Ms": 37.067128,
+          "p99Ms": 76.992906,
+          "maxMs": 102.60363
+        },
+        "endToEndReady": {
+          "count": 907,
+          "minMs": 22.197699,
+          "meanMs": 81.326122,
+          "p50Ms": 67.736135,
+          "p90Ms": 149.00139,
+          "p95Ms": 177.776515,
+          "p99Ms": 265.161547,
+          "maxMs": 302.508668
+        }
+      },
+      "timeToAllReadySeconds": 120.047572687,
+      "createThroughput": {
+        "count": 907,
+        "durationSeconds": 119.915934297,
+        "overallPerSecond": 7.5636320170228695,
+        "steadyStatePerSecond": 7.686061911786642,
+        "best10sPerSecond": 10.2,
+        "best60sPerSecond": 8.283333333333333
+      },
+      "readyThroughput": {
+        "count": 907,
+        "durationSeconds": 120.015588814,
+        "overallPerSecond": 7.557351582098784,
+        "steadyStatePerSecond": 7.6864915316383495,
+        "best10sPerSecond": 10.2,
+        "best60sPerSecond": 8.266666666666667
+      },
+      "createThroughputPerNode": {
+        "workerNodes": 2,
+        "overallPerSecond": 3.7818160085114347,
+        "steadyStatePerSecond": 3.843030955893321,
+        "best10sPerSecond": 5.1,
+        "best60sPerSecond": 4.141666666666667
+      },
+      "readyThroughputPerNode": {
+        "workerNodes": 2,
+        "overallPerSecond": 3.778675791049392,
+        "steadyStatePerSecond": 3.8432457658191748,
+        "best10sPerSecond": 5.1,
+        "best60sPerSecond": 4.133333333333334
+      },
+      "sustainedWindows": [
+        {
+          "startOffsetSeconds": 0,
+          "endOffsetSeconds": 10,
+          "arrivals": 61,
+          "ready": 61,
+          "latency": {
+            "count": 61,
+            "minMs": 25.191391,
+            "meanMs": 47.252723,
+            "p50Ms": 44.015054,
+            "p90Ms": 64.517029,
+            "p95Ms": 71.515513,
+            "p99Ms": 98.801882,
+            "maxMs": 98.801882
+          }
+        },
+        {
+          "startOffsetSeconds": 10,
+          "endOffsetSeconds": 20,
+          "arrivals": 76,
+          "ready": 76,
+          "latency": {
+            "count": 76,
+            "minMs": 22.951504,
+            "meanMs": 55.453712,
+            "p50Ms": 53.246029,
+            "p90Ms": 83.501297,
+            "p95Ms": 87.705559,
+            "p99Ms": 98.557894,
+            "maxMs": 98.557894
+          }
+        },
+        {
+          "startOffsetSeconds": 20,
+          "endOffsetSeconds": 30,
+          "arrivals": 74,
+          "ready": 74,
+          "latency": {
+            "count": 74,
+            "minMs": 26.733565,
+            "meanMs": 58.592475,
+            "p50Ms": 56.128756,
+            "p90Ms": 83.502982,
+            "p95Ms": 100.796632,
+            "p99Ms": 104.591894,
+            "maxMs": 104.591894
+          }
+        },
+        {
+          "startOffsetSeconds": 30,
+          "endOffsetSeconds": 40,
+          "arrivals": 82,
+          "ready": 82,
+          "latency": {
+            "count": 82,
+            "minMs": 25.763852,
+            "meanMs": 72.714367,
+            "p50Ms": 68.47747,
+            "p90Ms": 108.793979,
+            "p95Ms": 123.039555,
+            "p99Ms": 189.508741,
+            "maxMs": 189.508741
+          }
+        },
+        {
+          "startOffsetSeconds": 40,
+          "endOffsetSeconds": 50,
+          "arrivals": 77,
+          "ready": 77,
+          "latency": {
+            "count": 77,
+            "minMs": 24.367874,
+            "meanMs": 54.74964,
+            "p50Ms": 54.827705,
+            "p90Ms": 76.814806,
+            "p95Ms": 80.047442,
+            "p99Ms": 126.774977,
+            "maxMs": 126.774977
+          }
+        },
+        {
+          "startOffsetSeconds": 50,
+          "endOffsetSeconds": 60,
+          "arrivals": 82,
+          "ready": 82,
+          "latency": {
+            "count": 82,
+            "minMs": 30.802165,
+            "meanMs": 78.147992,
+            "p50Ms": 64.080344,
+            "p90Ms": 137.265083,
+            "p95Ms": 149.765161,
+            "p99Ms": 159.836201,
+            "maxMs": 159.836201
+          }
+        },
+        {
+          "startOffsetSeconds": 60,
+          "endOffsetSeconds": 70,
+          "arrivals": 76,
+          "ready": 76,
+          "latency": {
+            "count": 76,
+            "minMs": 22.197699,
+            "meanMs": 85.362773,
+            "p50Ms": 68.580623,
+            "p90Ms": 162.177146,
+            "p95Ms": 177.14806,
+            "p99Ms": 229.71917,
+            "maxMs": 229.71917
+          }
+        },
+        {
+          "startOffsetSeconds": 70,
+          "endOffsetSeconds": 80,
+          "arrivals": 97,
+          "ready": 97,
+          "latency": {
+            "count": 97,
+            "minMs": 32.898866,
+            "meanMs": 105.133774,
+            "p50Ms": 100.301339,
+            "p90Ms": 159.886567,
+            "p95Ms": 174.807602,
+            "p99Ms": 255.4073,
+            "maxMs": 255.4073
+          }
+        },
+        {
+          "startOffsetSeconds": 80,
+          "endOffsetSeconds": 90,
+          "arrivals": 61,
+          "ready": 61,
+          "latency": {
+            "count": 61,
+            "minMs": 29.469124,
+            "meanMs": 55.347461,
+            "p50Ms": 53.84954,
+            "p90Ms": 76.03458,
+            "p95Ms": 79.864431,
+            "p99Ms": 93.379195,
+            "maxMs": 93.379195
+          }
+        },
+        {
+          "startOffsetSeconds": 90,
+          "endOffsetSeconds": 100,
+          "arrivals": 68,
+          "ready": 68,
+          "latency": {
+            "count": 68,
+            "minMs": 26.525118,
+            "meanMs": 169.196887,
+            "p50Ms": 169.878611,
+            "p90Ms": 271.312534,
+            "p95Ms": 290.198808,
+            "p99Ms": 302.508668,
+            "maxMs": 302.508668
+          }
+        },
+        {
+          "startOffsetSeconds": 100,
+          "endOffsetSeconds": 110,
+          "arrivals": 69,
+          "ready": 69,
+          "latency": {
+            "count": 69,
+            "minMs": 35.632117,
+            "meanMs": 96.978702,
+            "p50Ms": 91.450501,
+            "p90Ms": 172.377068,
+            "p95Ms": 177.776515,
+            "p99Ms": 203.645537,
+            "maxMs": 203.645537
+          }
+        },
+        {
+          "startOffsetSeconds": 110,
+          "endOffsetSeconds": 120,
+          "arrivals": 84,
+          "ready": 84,
+          "latency": {
+            "count": 84,
+            "minMs": 33.97476,
+            "meanMs": 89.106602,
+            "p50Ms": 86.393882,
+            "p90Ms": 138.696829,
+            "p95Ms": 146.454892,
+            "p99Ms": 213.516654,
+            "maxMs": 213.516654
+          }
+        }
+      ]
+    }
+  ],
+  "apfVerification": {
+    "flowSchema": "global-default",
+    "priorityLevel": "global-default",
+    "exempt": false
+  }
+}

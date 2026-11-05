@@ -1,0 +1,37 @@
+{
+  "revision": "baseline",
+  "commit": "4d39311ba9d89001d79ff1217ed330c7ea3761ec",
+  "image": "node:22-alpine",
+  "pool": 128,
+  "claims_per_second": 2,
+  "seconds": 60,
+  "profile_seconds": 30,
+  "profile_delay": 10,
+  "gomaxprocs": 4,
+  "cpus": [
+    6,
+    8,
+    10,
+    12
+  ],
+  "seed": [
+    0,
+    0
+  ],
+  "controller_args": [
+    "--leader-elect=false",
+    "--extensions",
+    "--metrics-bind-address=127.0.0.1:18080",
+    "--health-probe-bind-address=127.0.0.1:18081",
+    "--metrics-secure-serving=false",
+    "--enable-pprof-debug",
+    "--pprof-mutex-profile-fraction=1",
+    "--pprof-block-profile-rate=0",
+    "--sandbox-concurrent-workers=100",
+    "--sandbox-claim-concurrent-workers=50",
+    "--sandbox-warm-pool-concurrent-workers=1",
+    "--sandbox-template-concurrent-workers=1",
+    "--sandbox-warm-pool-max-batch-size=32",
+    "--sandbox-warm-pool-max-refill-rate=16"
+  ]
+}

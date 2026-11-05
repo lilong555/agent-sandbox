@@ -1,0 +1,348 @@
+{
+  "status": "complete",
+  "samples": [
+    {
+      "tag": "start",
+      "started_at": {
+        "utc": "2026-11-05T16:20:58.965355+00:00",
+        "monotonic_seconds": 28294.156632334
+      },
+      "status": "complete",
+      "artifact": "metrics-0000.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:20:58.968715+00:00",
+        "monotonic_seconds": 28294.159993171
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:21:03.968877+00:00",
+        "monotonic_seconds": 28299.160171283
+      },
+      "status": "complete",
+      "artifact": "metrics-0001.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:21:03.972363+00:00",
+        "monotonic_seconds": 28299.163647678
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:21:08.970548+00:00",
+        "monotonic_seconds": 28304.163787043
+      },
+      "status": "complete",
+      "artifact": "metrics-0002.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:21:08.973439+00:00",
+        "monotonic_seconds": 28304.166667291
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:21:13.973592+00:00",
+        "monotonic_seconds": 28309.166831939
+      },
+      "status": "complete",
+      "artifact": "metrics-0003.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:21:13.977697+00:00",
+        "monotonic_seconds": 28309.170926803
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:21:18.977846+00:00",
+        "monotonic_seconds": 28314.17108545
+      },
+      "status": "complete",
+      "artifact": "metrics-0004.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:21:18.983815+00:00",
+        "monotonic_seconds": 28314.177052809
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:21:23.983992+00:00",
+        "monotonic_seconds": 28319.177234614
+      },
+      "status": "complete",
+      "artifact": "metrics-0005.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:21:23.988498+00:00",
+        "monotonic_seconds": 28319.18173251
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:21:28.988681+00:00",
+        "monotonic_seconds": 28324.181922426
+      },
+      "status": "complete",
+      "artifact": "metrics-0006.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:21:28.992812+00:00",
+        "monotonic_seconds": 28324.186043497
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:21:33.992958+00:00",
+        "monotonic_seconds": 28329.186200979
+      },
+      "status": "complete",
+      "artifact": "metrics-0007.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:21:33.996460+00:00",
+        "monotonic_seconds": 28329.189689582
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:21:38.994895+00:00",
+        "monotonic_seconds": 28334.189821547
+      },
+      "status": "complete",
+      "artifact": "metrics-0008.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:21:38.997808+00:00",
+        "monotonic_seconds": 28334.192717002
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:21:43.997964+00:00",
+        "monotonic_seconds": 28339.192894303
+      },
+      "status": "complete",
+      "artifact": "metrics-0009.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:21:44.002710+00:00",
+        "monotonic_seconds": 28339.197627308
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:21:49.005193+00:00",
+        "monotonic_seconds": 28344.200125933
+      },
+      "status": "complete",
+      "artifact": "metrics-0010.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:21:49.015252+00:00",
+        "monotonic_seconds": 28344.210185966
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:21:54.015430+00:00",
+        "monotonic_seconds": 28349.21034952
+      },
+      "status": "complete",
+      "artifact": "metrics-0011.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:21:54.018587+00:00",
+        "monotonic_seconds": 28349.213491966
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:21:59.018729+00:00",
+        "monotonic_seconds": 28354.213652128
+      },
+      "status": "complete",
+      "artifact": "metrics-0012.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:21:59.022255+00:00",
+        "monotonic_seconds": 28354.217164062
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:22:04.022403+00:00",
+        "monotonic_seconds": 28359.217325423
+      },
+      "status": "complete",
+      "artifact": "metrics-0013.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:22:04.026555+00:00",
+        "monotonic_seconds": 28359.221466166
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:22:09.024957+00:00",
+        "monotonic_seconds": 28364.221638866
+      },
+      "status": "complete",
+      "artifact": "metrics-0014.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:22:09.028632+00:00",
+        "monotonic_seconds": 28364.225294523
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:22:14.028825+00:00",
+        "monotonic_seconds": 28369.2255074
+      },
+      "status": "complete",
+      "artifact": "metrics-0015.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:22:14.034116+00:00",
+        "monotonic_seconds": 28369.230786577
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:22:19.034281+00:00",
+        "monotonic_seconds": 28374.230957205
+      },
+      "status": "complete",
+      "artifact": "metrics-0016.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:22:19.038006+00:00",
+        "monotonic_seconds": 28374.234668856
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:22:24.038151+00:00",
+        "monotonic_seconds": 28379.234825534
+      },
+      "status": "complete",
+      "artifact": "metrics-0017.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:22:24.041402+00:00",
+        "monotonic_seconds": 28379.238066311
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:22:29.041547+00:00",
+        "monotonic_seconds": 28384.238224599
+      },
+      "status": "complete",
+      "artifact": "metrics-0018.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:22:29.045671+00:00",
+        "monotonic_seconds": 28384.2423407
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:22:34.045879+00:00",
+        "monotonic_seconds": 28389.242566543
+      },
+      "status": "complete",
+      "artifact": "metrics-0019.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:22:34.052925+00:00",
+        "monotonic_seconds": 28389.249604629
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:22:39.051449+00:00",
+        "monotonic_seconds": 28394.249768724
+      },
+      "status": "complete",
+      "artifact": "metrics-0020.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:22:39.054721+00:00",
+        "monotonic_seconds": 28394.253029494
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:22:44.054861+00:00",
+        "monotonic_seconds": 28399.253183711
+      },
+      "status": "complete",
+      "artifact": "metrics-0021.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:22:44.059116+00:00",
+        "monotonic_seconds": 28399.257430258
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:22:49.059236+00:00",
+        "monotonic_seconds": 28404.257555718
+      },
+      "status": "complete",
+      "artifact": "metrics-0022.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:22:49.062181+00:00",
+        "monotonic_seconds": 28404.260491008
+      }
+    },
+    {
+      "tag": "periodic",
+      "started_at": {
+        "utc": "2026-11-05T16:22:54.062336+00:00",
+        "monotonic_seconds": 28409.260660871
+      },
+      "status": "complete",
+      "artifact": "metrics-0023.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:22:54.066421+00:00",
+        "monotonic_seconds": 28409.264734474
+      }
+    },
+    {
+      "tag": "end",
+      "started_at": {
+        "utc": "2026-11-05T16:22:58.793499+00:00",
+        "monotonic_seconds": 28413.991805396
+      },
+      "status": "complete",
+      "artifact": "metrics-0024.prom",
+      "ended_at": {
+        "utc": "2026-11-05T16:22:58.796559+00:00",
+        "monotonic_seconds": 28413.99486515
+      }
+    }
+  ],
+  "errors": [],
+  "trigger": {
+    "kind": "sustained",
+    "phase": "claims-warm-sustained",
+    "phase_number": 1,
+    "at": {
+      "utc": "2026-11-05T16:20:58.965108+00:00",
+      "monotonic_seconds": 28294.156381985
+    }
+  },
+  "boundary": {
+    "kind": "arrivals_finished",
+    "at": {
+      "utc": "2026-11-05T16:22:58.793288+00:00",
+      "monotonic_seconds": 28413.991610996
+    }
+  },
+  "exit_code": 0
+}

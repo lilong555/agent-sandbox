@@ -1,0 +1,775 @@
+{
+  "status": "verified",
+  "artifact_status": "complete",
+  "comparisons": [
+    {
+      "scope": "registration/config-vs-manifest",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "protocol/config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "protocol/manifest",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "protocol/summary",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "registration/source_commits",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "registration/controller_args",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "registration/controller_cpus",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "round/status",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "round/errors",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "round/selected_rate",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "schedule/0",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r2/config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r2/command",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r2/workload-config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r2/manifest-vs-summary",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r2/manifest-vs-per-run",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r2/manifest-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r2/per-run-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r2/summary-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r2/schedule.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r2/arrival-audit.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "schedule/1",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r4/config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r4/command",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r4/workload-config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r4/manifest-vs-summary",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r4/manifest-vs-per-run",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r4/manifest-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r4/per-run-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r4/summary-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r4/schedule.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r4/arrival-audit.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "schedule/2",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r8/config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r8/command",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r8/workload-config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r8/manifest-vs-summary",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r8/manifest-vs-per-run",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r8/manifest-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r8/per-run-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r8/summary-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r8/schedule.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-cal-r8/arrival-audit.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "schedule/3",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-1-baseline/config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-1-baseline/command",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-1-baseline/workload-config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-1-baseline/manifest-vs-summary",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-1-baseline/manifest-vs-per-run",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-1-baseline/manifest-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-1-baseline/per-run-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-1-baseline/summary-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-1-baseline/schedule.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-1-baseline/arrival-audit.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "schedule/4",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-2-candidate/config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-2-candidate/command",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-2-candidate/workload-config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-2-candidate/manifest-vs-summary",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-2-candidate/manifest-vs-per-run",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-2-candidate/manifest-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-2-candidate/per-run-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-2-candidate/summary-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-2-candidate/schedule.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-2-candidate/arrival-audit.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "schedule/5",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-3-candidate/config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-3-candidate/command",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-3-candidate/workload-config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-3-candidate/manifest-vs-summary",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-3-candidate/manifest-vs-per-run",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-3-candidate/manifest-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-3-candidate/per-run-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-3-candidate/summary-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-3-candidate/schedule.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-3-candidate/arrival-audit.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "schedule/6",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-4-baseline/config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-4-baseline/command",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-4-baseline/workload-config",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-4-baseline/manifest-vs-summary",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-4-baseline/manifest-vs-per-run",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-4-baseline/manifest-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-4-baseline/per-run-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-4-baseline/summary-recomputed",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-4-baseline/schedule.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "ci-formal-4-baseline/arrival-audit.json",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "selection/highest-passing-rate",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "schedule/formal",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "summary/pairs",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    },
+    {
+      "scope": "summary/primary_comparison",
+      "status": "match",
+      "difference_count": 0,
+      "difference_paths": []
+    }
+  ],
+  "errors": [],
+  "recomputed_runs": [
+    "ci-cal-r2",
+    "ci-cal-r4",
+    "ci-cal-r8",
+    "ci-formal-1-baseline",
+    "ci-formal-2-candidate",
+    "ci-formal-3-candidate",
+    "ci-formal-4-baseline"
+  ],
+  "skipped_runs": [],
+  "policy": {
+    "code": "Trusted modules imported from the verifier directory; no artifact code or provenance paths executed",
+    "statistics": "Raw exported durations and Prometheus samples recomputed, including calibration and two-pair primary comparison",
+    "floats": {
+      "relative_tolerance": 1e-12,
+      "absolute_tolerance": 1e-09
+    },
+    "cleanup": "Recorded completion status checked; cluster cleanup is not replayed",
+    "binary_provenance": "Registered hashes checked for consistency; local helper hashes recorded separately"
+  },
+  "local_helper_sha256": {
+    "metrics_parser": "4a1898a5bfede7f4b27445706b111b0de715fcd72730e63775894c44d0ccc4d0",
+    "schedule_emitter": "c55662897b05ea5f0d9b9867a5a5f27bfb81059d12d956f0e31702bb985fccf4"
+  },
+  "local_code_sha256": {
+    "verify_ci_round.py": "eb36738a09a511f511279ec081537ff96bad3a23bacbe85bb2f648f4b2c46ce0",
+    "ci_round.py": "9eb6745aaff067985aecfec49cf6f99d12af22d3fcd11872f663dc4aafe66b59",
+    "summarize.py": "69032a3eec1b0a8394dd5c52dd0545b356b86798068ba5aaff1ce289f3dc556a",
+    "summarize_unprofiled.py": "8248150317975f6cb2bfc06a3477a6293f69f9e74d2d0f6d115a0e036cf8e083",
+    "validate_pacing.py": "e7cc93c2dfd3632b80c992a18c19b301240ce1f078288971aa33b5a4a461f0c4",
+    "run_unprofiled.py": "280b2a92d9c34ec01ae53aa2197e76273989d7621096309089afc21c1d1ecc4a",
+    "repeat_suite.py": "6966f6abbb2ab3f5aed8100f293002e7d1d2673bb4763db22d379df45d86d0a1",
+    "reproduce_evidence.py": "6b359179473f04c5b050c074e728342874ecbee0721b8d47a37fd8492834292f"
+  },
+  "source_files_sha256": {
+    "REPORT.md": "c14fedf1004ef30efd4c60f2f9282568971e4b6ace9e6dcadb7202af6e9aa4f1",
+    "config.json": "99b28d7343c0fc99d9d0141a9768d97aefb94d23ad3703f8d71215069db325e6",
+    "linux-load.jsonl": "49ede07026cbf5f64847f09fc3ca9a13b83a25b50b829975a1977f3c5e0115cf",
+    "manifest.json": "bf2e3fc4efb7876e50307dc2d8ec8b66678a56dd0cfb00bc1bdf1e18a8a63f89",
+    "runs/ci-cal-r2/arrival-audit.json": "2d5eec6c4d3ce95b215a3f53c99fb4ed74dc106c1beb66faa56b6fb5fa094f51",
+    "runs/ci-cal-r2/command.json": "6edd5c4e258af9352da6625c74d81b18192aa631331ca109a06ca97e7f9ec38e",
+    "runs/ci-cal-r2/config.json": "3f5e20834b5a7ce275688aec2b185f91fe03bf01739c37d4cb77ad130a972c2b",
+    "runs/ci-cal-r2/controller.log": "5514c6986361e72157a88eeb9f1c8441767dffd61ac19f64108d10cc90735d2a",
+    "runs/ci-cal-r2/metrics-final.prom": "f9683c52363f503afc82c2a3da974a43f5dffe4ba469aefe02fb0ab4cc4600c8",
+    "runs/ci-cal-r2/schedule.json": "1a93af0b645a6511c9a26bdc0a79188d886975c917300203daf8774713d6829d",
+    "runs/ci-cal-r2/stress.log": "0c2a078fb644c8ba48851207146c390f908cf05922c9c2e260d7ec118c7a8cc5",
+    "runs/ci-cal-r2/summary.json": "876454f1aa0bd1532dd0bb7b628f65f5e762124ba8a9445479e8699cca899020",
+    "runs/ci-cal-r2/telemetry/metrics-0000.prom": "840adfe917a36e032e80c169e20d0bd63c7643966a70f4f5f29887037904c091",
+    "runs/ci-cal-r2/telemetry/metrics-0001.prom": "259b598688907a51107f44a3c0ee718e15f373fa85e733040eb737065949b555",
+    "runs/ci-cal-r2/telemetry/metrics-0002.prom": "4fd7884c6f7211934127e3fc94d9935aa05fc161694859a24ba6451fddd0f91e",
+    "runs/ci-cal-r2/telemetry/metrics-0003.prom": "4a49fc35e2ed9a906e3a36462cb0e4a93f21baaf07c237e2dcd2867bb37681e8",
+    "runs/ci-cal-r2/telemetry/metrics-0004.prom": "73b9d23ca31938d5f3a9c3766a01f6e2aee8bef938a27079c40a841f114ce752",
+    "runs/ci-cal-r2/telemetry/metrics-0005.prom": "2dc74a6eab05bb5255c9584158b592ca12a9b2c4c0d625697e5702d58b618281",
+    "runs/ci-cal-r2/telemetry/metrics-0006.prom": "c1ec0711fe751b35d76496fbd76076edf3a6463232404fad3647c53ee22a5758",
+    "runs/ci-cal-r2/telemetry/run.json": "439662e3d5bdf989fba40c3d610ee0db1112625f1d5ed47e4304599e040ee178",
+    "runs/ci-cal-r2/workload/sandboxes.jsonl": "a5a594802cea80525ce1dd7874dd5c010ec3e9fae5819208b7749539c75035f0",
+    "runs/ci-cal-r2/workload/summary.json": "2735a304515f532553b39d684b68255b1d8bcb3996f98f9330606a4c6d2f3692",
+    "runs/ci-cal-r2/workload/timeseries.jsonl": "463bcb324a5e96585beba33abc3f235090271953553dbe589bff830374197767",
+    "runs/ci-cal-r2/workload/watch.jsonl.gz": "86999c505861230a34b8d8727eb12e80c58ed5668a7b34a5870ef1bee2bc7c18",
+    "runs/ci-cal-r4/arrival-audit.json": "ad19481edb6afb0abe3bc536fe14b0260aba120e2b966066ddd4507235ce4bbd",
+    "runs/ci-cal-r4/command.json": "2e6b6849bd5d3669c2e8ce8fc42b7d4363096ec175b3ce2e65002ce22580e5da",
+    "runs/ci-cal-r4/config.json": "f058efe099cb4c1da301927042813603e07bef682006f773f4a8b9e3ccda9770",
+    "runs/ci-cal-r4/controller.log": "d55e93331c91f6c9a3ad1a087d954039b82760255e90cb8e17ee6a132068eca6",
+    "runs/ci-cal-r4/metrics-final.prom": "d3c6fb62add85aa05f69d90ec5482813b99e6be24f16041832cf7d1232d80232",
+    "runs/ci-cal-r4/schedule.json": "b63dce7a9d51299178ae075e777173e05bab818c029964d506a12d626aa244f7",
+    "runs/ci-cal-r4/stress.log": "7efc7d1ae352fae12bb750081d4398e9436ce9c3ad80eb16f94f532e7c7d72fe",
+    "runs/ci-cal-r4/summary.json": "99a21cddda8e45908254ad367820a4138f382ed153c80096e17031bef3405710",
+    "runs/ci-cal-r4/telemetry/metrics-0000.prom": "1adbf791bd0c59af9e02ec781afb2f4478150bd93b6b291107b6ff9159c6274f",
+    "runs/ci-cal-r4/telemetry/metrics-0001.prom": "00064769b5d9d4e560db81efed64063d42009026c18a4e868947b7033d7f8d32",
+    "runs/ci-cal-r4/telemetry/metrics-0002.prom": "9502b9cb015586f59aeb56305e074a1f21aa498832e92ade6a48495de99872ab",
+    "runs/ci-cal-r4/telemetry/metrics-0003.prom": "17f61d23599ad4c95c174b0dda833cf46fdd529fda0b13303a8951041b1ca8db",
+    "runs/ci-cal-r4/telemetry/metrics-0004.prom": "626e670bb8d409591385c78d44a2a9e2f2ff76d4a8f5bbbeb55c00978ffaf9f0",
+    "runs/ci-cal-r4/telemetry/metrics-0005.prom": "be961b2fca185a1abe65cc03bdd4ea9e1271c5438889f492cdaeadd377966492",
+    "runs/ci-cal-r4/telemetry/metrics-0006.prom": "8b273b9a6fdce888b1f058ffb2cfa5096c656b9d7423f7825c020cb5f7a82bc0",
+    "runs/ci-cal-r4/telemetry/run.json": "e798246350f2228c00d8f8ef6920c9274c73cdd4da7c924174f3fe7f2299ffd1",
+    "runs/ci-cal-r4/workload/sandboxes.jsonl": "9293b28e155694b4c0058e6da6fc50c4d4126e7473588f4241c33a5bf02115ea",
+    "runs/ci-cal-r4/workload/summary.json": "0355ca9880f45d3b9fe11ea98e24fc938d8185aa8e5a232208e3f7480848a991",
+    "runs/ci-cal-r4/workload/timeseries.jsonl": "b172ce81921f0eb2360dde8974816c6b03e9e67b4271d1d7f6a290f1478d3715",
+    "runs/ci-cal-r4/workload/watch.jsonl.gz": "602f0e50c810d1d72489e5036d01033743573536b7d6f96769ac7e8bac1c5706",
+    "runs/ci-cal-r8/arrival-audit.json": "c6fede55aa3895a248fd36bc9be139e4a4bff4e223b16426c7932bbfe8521035",
+    "runs/ci-cal-r8/command.json": "1745d49bf13852a900ed45c7c219aaf140e8ab7fed19ed397a2b37b5cfa740a6",
+    "runs/ci-cal-r8/config.json": "4b42486220b4c0bb7f886cad4e1abcc532184a4eac6537d1dd20f35726027df2",
+    "runs/ci-cal-r8/controller.log": "c53f2b4bb83af863e8ae2f9984f2ad5a18ce905ce16f257cec159cab5832746b",
+    "runs/ci-cal-r8/metrics-final.prom": "339e8dab097f2936a72836bb81d9a107874fbb12df6a754135f3aec3d2dccb92",
+    "runs/ci-cal-r8/schedule.json": "0a0a3b70d7d77a352eaca60c8dce560332a1a9d614d2f83dc90a00c296411a40",
+    "runs/ci-cal-r8/stress.log": "1ec6e25ece83fe35cadf476a9cc1cbb1a34a782e94b32441fa304614d6fb5020",
+    "runs/ci-cal-r8/summary.json": "1bb91706788cc92edc666786869d213f4dcc0a6db6c70f1c5e8f4719d058832f",
+    "runs/ci-cal-r8/telemetry/metrics-0000.prom": "cced20a5387140634e63163599776b5183cf40e4e15219b8bbe3e51452b3b1f1",
+    "runs/ci-cal-r8/telemetry/metrics-0001.prom": "bb3da7641c6a1d4bb467f702f2b92f956fe124075db399b01f0793734735c787",
+    "runs/ci-cal-r8/telemetry/metrics-0002.prom": "4439d510a7d8d430a9fca3850fb13570b30ee4028006444492d8a3d61a21fd0a",
+    "runs/ci-cal-r8/telemetry/metrics-0003.prom": "d4bade277ea43ce666afebbcdd2833859cd989496c58852fc91310e45a09eb11",
+    "runs/ci-cal-r8/telemetry/metrics-0004.prom": "69792cc1085e9010aed22fab3086f949c12b90783c4cf2434cca1b94e1cc40c5",
+    "runs/ci-cal-r8/telemetry/metrics-0005.prom": "c15d936d361539af1629b7b6b167bb42592a7be889795610b05c8cae56fa7862",
+    "runs/ci-cal-r8/telemetry/metrics-0006.prom": "60c226eaeb303eea0aeabe2c768053496ae4937ba55cd980ace5c8ce8ad528cb",
+    "runs/ci-cal-r8/telemetry/run.json": "7ec736bf7ea71279acf35f5561475aac83360ba505574d8471ae807a4562552b",
+    "runs/ci-cal-r8/workload/sandboxes.jsonl": "951cb9de2dc6481fcd511322db131c51631afb91c95e2eb75e8338bc4ee9ba72",
+    "runs/ci-cal-r8/workload/summary.json": "b675fe4d807c501120040fc55f6b4489996ec9d31826e235c57ea72583b63e16",
+    "runs/ci-cal-r8/workload/timeseries.jsonl": "6aef1e68ad2b57f60a606977a884b1c06527f6c95bd723af893746e129070933",
+    "runs/ci-cal-r8/workload/watch.jsonl.gz": "a35ec22b306a8cfcc8dc40d18678fe694c96928a343cdb96bb620918c03ee3c7",
+    "runs/ci-formal-1-baseline/arrival-audit.json": "91b3e99fe2c7df9a41cc17015976473a665f6dd1fdab145c959826eaabde0ba8",
+    "runs/ci-formal-1-baseline/command.json": "37949644fa705b4a7425210a2bb0926fd8165cffa1686d998ea3e3b6a0f1f5c6",
+    "runs/ci-formal-1-baseline/config.json": "efd122c9788597680329c9dc67c7d4577c8b3febe542fda6be50b0aadc58b6f8",
+    "runs/ci-formal-1-baseline/controller.log": "f8dd6e11cd47d372346eb4f01222ff7d19733500293fec5d341e5cebb5c9c8e8",
+    "runs/ci-formal-1-baseline/metrics-final.prom": "fbbd7d838e7207976e026f410841cf1389021f8751dadbc7fc3ebc7b4c9099ee",
+    "runs/ci-formal-1-baseline/schedule.json": "bddda561d9c4a3e8c1077d86bf89690bf46360564d231ea49031d5b0f94771a3",
+    "runs/ci-formal-1-baseline/stress.log": "5b796b399852938304e8071db28edc1949c9cac07503c6c0de287340698d406e",
+    "runs/ci-formal-1-baseline/summary.json": "890b94761cfbc961cd6da797b61323c617ac640af26146ffc28b6fa3fc8cbae0",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0000.prom": "6b0b746783f936a81d97cf2f2168ebaacfec4e4809436b83d78fd4aaebbc15fc",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0001.prom": "8a7cedbcdf36566b868d7ee4201b8fe8879b969a71ed97e47643d9a31448e0fd",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0002.prom": "1f10a8b11ef38e8f7509bc4c3d747ca4ca8af9712925cea111fe10541738bf8c",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0003.prom": "6a0232d65cf9e8ef13c24095b759285dafd2bba855e8abf475a36b92844d5617",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0004.prom": "5966058d98ca2dc2f4c29fa371a21c872ef41d15e68b48d50b413dd3a08b85d3",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0005.prom": "033c61cd799a9969d5e8a236399bd4211dec916b4a7332940f9059ed63f0b05a",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0006.prom": "1e1fb54098031b95ae30866cf48c0af6309bd149de6d05ba801c1c77a821c8be",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0007.prom": "0f5279036e96974f23b79dd387ae0c028544c03633c1f270675253d719238141",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0008.prom": "47855fef0d99180ca5536e5ab12b20b37f63ea7be1499a11890490d9eaf3af7d",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0009.prom": "a287c55acf674bc109b7860040434b5d03711c106663d70f5515ed00b1de53aa",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0010.prom": "0e9638adf7bbec38aa5964499e2d35ac8e85763fa6eecac60eea3efca96cdaf2",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0011.prom": "358d7d140fcd2177b3b82e3587b8f3080edd30b608d0acec54d2695325c801d7",
+    "runs/ci-formal-1-baseline/telemetry/metrics-0012.prom": "57afcb1b19a8a8c837d68389d305ba3b85ec22433318d353558a12b9acaa7992",
+    "runs/ci-formal-1-baseline/telemetry/run.json": "f4e66c77ca5b53403ab457b50fcc1e82910579035186cd0c36074a83769b33a5",
+    "runs/ci-formal-1-baseline/workload/sandboxes.jsonl": "29e2dcd343bc54fbb4eb94dfd9ff0d49ceac19b54a5c22fb6f75bd4f87e7991f",
+    "runs/ci-formal-1-baseline/workload/summary.json": "3b59db1b33d33fccacbf4c74c13598b1e76bbbfe0c8c15c13dc60a39be2b20cc",
+    "runs/ci-formal-1-baseline/workload/timeseries.jsonl": "b0fcf7056275f0c93e90916090f63349c90463853222c7860fe67da5972e72aa",
+    "runs/ci-formal-1-baseline/workload/watch.jsonl.gz": "bf95365a0dc91c9ddbb26e454bce81640dd7a59894153622341246f5b6d8e354",
+    "runs/ci-formal-2-candidate/arrival-audit.json": "56cfdf9cc92453dd9653f3198352bfad06b4d62fc14b4b98134ac67436e29e94",
+    "runs/ci-formal-2-candidate/command.json": "c4f576c324bdf6371d513df0b2cc9dbb40035b554b699ffb5249e747f608b262",
+    "runs/ci-formal-2-candidate/config.json": "1382428b19b7f4bd6f44251782aa1da454e1cbd5f67f0c01b97cc173c5baa593",
+    "runs/ci-formal-2-candidate/controller.log": "318e4a436a6d95aa6d5195e0a271e0af6ee05b3ff15ef50a0fef2852d7a6ec0c",
+    "runs/ci-formal-2-candidate/metrics-final.prom": "c6aec5cf0fbbd53279f69e22c5ce56bc581fbc84d611ace7c493713fe0f5be85",
+    "runs/ci-formal-2-candidate/schedule.json": "bddda561d9c4a3e8c1077d86bf89690bf46360564d231ea49031d5b0f94771a3",
+    "runs/ci-formal-2-candidate/stress.log": "c8ee54930c2c69dad78ebf8ca48bf7699554837998171723808f84116b70084e",
+    "runs/ci-formal-2-candidate/summary.json": "37f51e23b1978a5152cc62266b5c6ebc15d58287cb86d109d1c657dcb602572f",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0000.prom": "a4f39943f2f5105d07290baf649615e00624f9517dd8c0dd95eeba8fa306fdc6",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0001.prom": "d23e8eb025ec0108e8648996c60223cbe4f50f2ab581325b4120dd0cc8b327c1",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0002.prom": "42d6fd7c675dab29caeabe044a4c3ba237b63375d6a87250df24df6968937b3b",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0003.prom": "0df8278d5c4efba3a1ed6580549942f4051dc1df5759b662fe7ebd9ae9d95214",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0004.prom": "1e260b14cc9ecb351bc98e1648fdaa5f5d2d660edf246f677c76b2677086120b",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0005.prom": "43c262d25a45ee8b809a4308dd67699933682cfc31ca5f079b88ba6a1092b811",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0006.prom": "ceeed93bf6c8300f23f57ba936018f48f61f8ff128c88cf1951963a20f0524e6",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0007.prom": "858009ce06c16fec5cc1f256f9e1abcd5150bce0cc1190f5c6745b1f77b00cba",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0008.prom": "88cd7b89662fff5cad2d0adcbdd4fff50f150e13b7559e428fbb120eb7ea5b13",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0009.prom": "0d9fc9b1f71c169055f66b67a46463826df0f074482f493128c5a768834189c3",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0010.prom": "dcea557bce31045fd74635bb21e75bc21e69c29fcf2786d01893f324b27c66a9",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0011.prom": "8f1a1d80bd929301f898bed27830421440bb8f409f9d613f19ca3ff7c29ce583",
+    "runs/ci-formal-2-candidate/telemetry/metrics-0012.prom": "4df868fa429815fc92864d374a09daca899f777c3980fa2316428590074e3c19",
+    "runs/ci-formal-2-candidate/telemetry/run.json": "f1f53d5e52f1437fc68ab9c4515f77f0000d6dfc38b181b492817a92c8484596",
+    "runs/ci-formal-2-candidate/workload/sandboxes.jsonl": "2a58b93204c50328cab23afa334c9dbe2d37d09a0ab70602641c62d416027362",
+    "runs/ci-formal-2-candidate/workload/summary.json": "d0b076dbf1d49b8cf4b9ad08840ea1017ffe47710423427484b7b0ba2d4d6b69",
+    "runs/ci-formal-2-candidate/workload/timeseries.jsonl": "ecaaf40470f0640a8e9644574de459710c42c66669ed12466d1d8dcf88d3c18a",
+    "runs/ci-formal-2-candidate/workload/watch.jsonl.gz": "881d7294f83efa2b8e11ece4df02be9ef83dff6de47705cb0093b6c833794eee",
+    "runs/ci-formal-3-candidate/arrival-audit.json": "852d8488653c0fc9dd806f4ba43c1f01b2331f5078ff6d0b667dab6efd6f01d5",
+    "runs/ci-formal-3-candidate/command.json": "b497b024a73c0e1aaf10327c191194f86dc3fd961e3ade4f0649bc50c50221fd",
+    "runs/ci-formal-3-candidate/config.json": "666dabc0c808e33d2f59ae26fc850365463a4179e25d1e7a62543fd4e4303c30",
+    "runs/ci-formal-3-candidate/controller.log": "bb2586f0747fb85356f21c9df45d86b17cb3051194fd7eed773ef552f241635f",
+    "runs/ci-formal-3-candidate/metrics-final.prom": "0f88e13684246ed8fc4a7ab6e251a27adeef545b65ca22dd9c53bc8d898d8c13",
+    "runs/ci-formal-3-candidate/schedule.json": "bddda561d9c4a3e8c1077d86bf89690bf46360564d231ea49031d5b0f94771a3",
+    "runs/ci-formal-3-candidate/stress.log": "f202f91eff3a837c37582031f53b9b4809d5e4441aac42a000949645c07b6ab3",
+    "runs/ci-formal-3-candidate/summary.json": "338c756c5b88b130a3215bed1b1369b9bc6679036225e4ce2decad2c58e2aae5",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0000.prom": "e875c2d94ab5c963c896a364372eae1279889104c6bae982cad23ee49ba947c9",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0001.prom": "4e3fa8fefbf03c761bcf7ffcce600f5643519a7c83207e2c5a5d2e8cbdd3b662",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0002.prom": "8401d4b79067237086c72851b430824f4a1089170cd2209cba57722345a11fcc",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0003.prom": "235a3b507a2b369f9fbb0e554e28b85753673ae24757ea200477c049b39f51b0",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0004.prom": "7f8d616948baa48a78ce7aeea5c3806e1c8b6133c718e181bbb69a6578f83668",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0005.prom": "865f9a52c4643de670d3b358b9b085e3ede8fe9bc418cce376a55035c9f5c3eb",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0006.prom": "d06ab0506e59a2b6f35517bc3eca8980cfbfcc7dad7cf4de8fae83278112a1cf",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0007.prom": "5cb1f58fe62d67ff070943579f0e53a7927e4337df81a2c2840917d038f9a4ed",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0008.prom": "6fa13766ba569e5ccabce4414d1907c1dfd5548d49518239d5013dacca14b2c7",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0009.prom": "94b972328dfdb73d764be462deac880ad03aa3fa4b5b3a866ca01395da75d96b",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0010.prom": "0da510e0ccca2664a94c5d39ab8f358761bc08267807a18296143be8748f0923",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0011.prom": "7d17f4cb4ec7c0cadaaef0ae1f8b19c4ab37c341e74688501f55b5ea71f1ac5c",
+    "runs/ci-formal-3-candidate/telemetry/metrics-0012.prom": "dd7a6ebf6b89dd42e7f2bdf947144a2db2ae002ed53f855662bffbc425ae5be2",
+    "runs/ci-formal-3-candidate/telemetry/run.json": "73e825ec95e3e174c7110af3b7bb4abe6a01211cdfe1b275ef7bc85f2e7aa568",
+    "runs/ci-formal-3-candidate/workload/sandboxes.jsonl": "d7045ec116bdf9636bbffaeba157f16d1a6fbefe938024984451b2874be36ae8",
+    "runs/ci-formal-3-candidate/workload/summary.json": "ccd1e05fd97e7e2fa3ae0829c3234d34a4ba9e040f2c3d8de4c0a8ce321deaf9",
+    "runs/ci-formal-3-candidate/workload/timeseries.jsonl": "667dc78bd1c5a53268243f9d9d222650c2c1d50f520ea4830faf359d3be33f08",
+    "runs/ci-formal-3-candidate/workload/watch.jsonl.gz": "add391e8e20ff188a22d6c017c693632cdb734ad9c4f801b8facfd1122ac3a5d",
+    "runs/ci-formal-4-baseline/arrival-audit.json": "efca3b205e9fab264c5ad51dd812063cd32c03b4807e274ffdede6da8de706e5",
+    "runs/ci-formal-4-baseline/command.json": "fc4229fde826e3993f4d1d96c89ca59d4928eec74563c6f5634dff625c6db012",
+    "runs/ci-formal-4-baseline/config.json": "00e0dac68af37edc056678bf38eaf5c7b7033725747fdd11eb9868d69803f9ff",
+    "runs/ci-formal-4-baseline/controller.log": "485832cbbe02fca8b17fafcb96f5c57d499fb43918512691643ef71fd98e8d02",
+    "runs/ci-formal-4-baseline/metrics-final.prom": "720eb04441ffe690aece1b53aa9f03c41e5c596d0da29602bdc13148e2418008",
+    "runs/ci-formal-4-baseline/schedule.json": "bddda561d9c4a3e8c1077d86bf89690bf46360564d231ea49031d5b0f94771a3",
+    "runs/ci-formal-4-baseline/stress.log": "9e5523749ac9dbeb3fd8b4f02489f6367db4d7057e255649456774cc6e94adc2",
+    "runs/ci-formal-4-baseline/summary.json": "66133c1a0819613eb3fee258779b78a49cd43cb4746d28607be015eff2301443",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0000.prom": "36af1e1c63816a05ae3a06b586f8d70b31614b06c5df4dba59a591f3d8ddc6ca",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0001.prom": "d5f25dc7b399c34e8caada233ecce130376c20220f516a9e237a96cae7647965",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0002.prom": "456b776423d3b8ed7924d7aabeb98c8fa8e0ec78d28efbc801540f3014269426",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0003.prom": "2999cc08b1a9fdf971fcd2017b84acf0ba733b2a8a9247c478d2e6152f17a0c8",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0004.prom": "608effbe322654762a0582701df2e55c022c0df8c480df950d8762dbfc56918c",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0005.prom": "658941ede648032c29ead655b402b05dd8bf9598a2f09d20186aac174d3c5015",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0006.prom": "d33b1f58f71b135a3d8260e11500c49a35f669c8ffba8fb3c9eaf572bbd866ce",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0007.prom": "bd9c01d05134f7a9af1e7388187cccfac1f843409966a9adb1a6ed0057d5560a",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0008.prom": "e83cd22a2eaf3874c3a64d06370bc62b48d1ff18a080991944be745d1ac5b1ea",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0009.prom": "016b7405f0ca01e45d3f8c6e118ddea724901b2c2577c7492d685d58ca87f70a",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0010.prom": "2c0507a349d5321533c4f450993ed038f7c198b02d53c6bc784e152577fc8a7e",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0011.prom": "e66c1295ff5d3e8e3c4038e0a2edb9c09182f044cc84f5c681ad4e9d080097d2",
+    "runs/ci-formal-4-baseline/telemetry/metrics-0012.prom": "7bf82cd1020c21c07688eab65d75dd01cfbda08e443320e4a6c61be8dd0a4b8d",
+    "runs/ci-formal-4-baseline/telemetry/run.json": "78fdd0420009bcac50b62587768ca5496e291885a3d517a308f1c737766fa3e5",
+    "runs/ci-formal-4-baseline/workload/sandboxes.jsonl": "a338f986a3cbbd89e3cb6ec2df98b2230b35f1ccecc06bb84abfe670e2e50402",
+    "runs/ci-formal-4-baseline/workload/summary.json": "f51f5091f307bc9d070a812825aacc5ecf566b91d149b0a5d42282fc32426a1f",
+    "runs/ci-formal-4-baseline/workload/timeseries.jsonl": "b2d384c5564d22906605aaadd7562beff83e913f1cb5255e3d6fa40f5b4c94b4",
+    "runs/ci-formal-4-baseline/workload/watch.jsonl.gz": "37cbf54f568a17d0ad41fbde87f4d1d53dc51ac0db838e109ceedd326244833c",
+    "summary.json": "574357f236027beaea4ee6fe0d996eb41f39d31787dce0ad36cb0806645a667e"
+  },
+  "source_tree_sha256": "86ee866d07e8e9b5b9a169096db001282b9665ea3954cbd0cdbbf23a76ec5337",
+  "copy_verified": true,
+  "registered_binary_sha256": {
+    "baseline": "7d8f2a75d36068ff58bf5dff9781163b5ef4a7f851cadf864d72a25be1378d81",
+    "candidate": "6b12ecb55e7c56c3c6e7157c66453f805565e1cdfe5ef744ec01479754c699e4",
+    "stress": "4fa191a18d5e9a03a5e3bd674775828d1937ef726c8f38b795415a1724e6bdc1",
+    "metrics_parser": "72fe3798f7cd491aea0d3fd99a7a69f552ab1367f8e18320bf240cb22d70ab67",
+    "schedule_emitter": "7dac47ada4332e7f01a8604bd8233c028efa12990ba7b84ce30d1fe85236b0bd"
+  },
+  "registered_source_commits": {
+    "baseline": "4d39311ba9d89001d79ff1217ed330c7ea3761ec",
+    "candidate": "a87fa000ec96c8e3d9be493da5c6e6e2048b37ad",
+    "stress": "a87fa000ec96c8e3d9be493da5c6e6e2048b37ad"
+  },
+  "recomputed_summary_sha256": "138398c5422278a9c5e297f1bf795250eb9ee74f3e5ea9049aea34c0b189afce",
+  "source_unchanged": true,
+  "difference_count": 0
+}

@@ -1,0 +1,36 @@
+{
+  "repository": "lilong555/agent-sandbox",
+  "pull_request": "https://github.com/kubernetes-sigs/agent-sandbox/pull/2179",
+  "run_id": 42077323946,
+  "run_url": "https://github.com/lilong555/agent-sandbox/actions/runs/42077323946",
+  "job_id": 127420892893,
+  "workflow_commit": "a91ae4b04d91695d0dae042392ec8c8ae05573da",
+  "conclusion": "success",
+  "artifact_id": 13439899740,
+  "artifact_name": "nodespread-controller-42077323946-1",
+  "original_artifact_bytes": 8145463,
+  "original_artifact_sha256": "5cf24fc84fba99bc66cb959a49f595491161be6365f24f89ee39931a6d6c17f3",
+  "original_round_tree_sha256": "86ee866d07e8e9b5b9a169096db001282b9665ea3954cbd0cdbbf23a76ec5337",
+  "source_commits": {
+    "baseline": "4d39311ba9d89001d79ff1217ed330c7ea3761ec",
+    "candidate": "a87fa000ec96c8e3d9be493da5c6e6e2048b37ad"
+  },
+  "published_inputs": [
+    "registered protocols and run configurations",
+    "source and executable fingerprints",
+    "all seven run summaries",
+    "claim lifecycle records",
+    "raw controller Prometheus samples",
+    "numeric Linux host telemetry",
+    "compiler, CPU, Kubernetes and image provenance"
+  ],
+  "excluded_files": [
+    "controller.log",
+    "stress.log",
+    "watch.jsonl.gz",
+    "timeseries.jsonl",
+    "final cluster inventories and events"
+  ],
+  "privacy": "Kubeconfig and authentication material are excluded.",
+  "comparison": "Two descriptive AB/BA run pairs; preserve all formal observations."
+}

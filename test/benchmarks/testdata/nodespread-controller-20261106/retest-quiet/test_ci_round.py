@@ -1,6 +1,8 @@
+import errno
 import json
 import math
 from pathlib import Path
+import socket
 import subprocess
 import tempfile
 import unittest
@@ -86,6 +88,34 @@ class PlanningTests(unittest.TestCase):
         with mock.patch.object(ci, "kube", return_value="production"):
             with self.assertRaisesRegex(ci.RoundError, "kind context"):
                 ci.cluster_check({})
+
+
+class PortTests(unittest.TestCase):
+    def test_active_listener_is_rejected_with_controlled_diagnostic(self):
+        with socket.socket() as listener:
+            listener.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            listener.bind(("127.0.0.1", 0))
+            listener.listen(1)
+            port = listener.getsockname()[1]
+            with self.assertRaisesRegex(ci.RoundError, f"port {port} unavailable.*errno {errno.EADDRINUSE}"):
+                ci.ports_available((port,))
+
+    def test_recently_closed_connection_does_not_block_controller_restart(self):
+        with socket.socket() as listener:
+            listener.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            listener.bind(("127.0.0.1", 0))
+            listener.listen(1)
+            port = listener.getsockname()[1]
+            with socket.create_connection(listener.getsockname(), timeout=2) as client:
+                connection, _ = listener.accept()
+                with connection:
+                    connection.shutdown(socket.SHUT_WR)
+                    self.assertEqual(client.recv(1), b"")
+        with socket.socket() as plain_probe:
+            with self.assertRaises(OSError) as failure:
+                plain_probe.bind(("127.0.0.1", port))
+            self.assertEqual(failure.exception.errno, errno.EADDRINUSE)
+        ci.ports_available((port,))
 
 
 class ExecutionTests(unittest.TestCase):

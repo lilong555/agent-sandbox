@@ -115,10 +115,15 @@ def cluster_check(env):
     return observed
 
 
-def ports_available():
-    for port in (18080, 18081):
+def ports_available(ports=(18080, 18081)):
+    for port in ports:
         with socket.socket() as sock:
-            sock.bind(("127.0.0.1", port))
+            # Match Go listeners so recently closed connections can remain in TIME_WAIT.
+            sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            try:
+                sock.bind(("127.0.0.1", port))
+            except OSError as error:
+                raise RoundError(f"Controller port {port} unavailable (errno {error.errno})") from error
 
 
 def http_bytes(url, timeout=5):

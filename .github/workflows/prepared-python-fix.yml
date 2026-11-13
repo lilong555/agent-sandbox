@@ -1,0 +1,43 @@
+name: Prepared Python process cleanup
+
+on:
+  push:
+    branches: [ci/prepared-python-fix-20261113]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sdk:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12']
+    defaults:
+      run:
+        working-directory: clients/python/agentic-sandbox-client
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: 6aa5c62c5d08b5f2e53b63d6382fe9a7ab687a89
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: clients/python/agentic-sandbox-client/pyproject.toml
+      - name: Install test dependencies
+        run: python -m pip install -e '.[test]'
+      - name: Type check
+        run: python -m mypy k8s_agent_sandbox
+      - name: Test the complete SDK
+        if: ${{ !cancelled() }}
+        run: python -m pytest -q k8s_agent_sandbox --junitxml="$GITHUB_WORKSPACE/validation-results/sdk.xml"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: ${{ !cancelled() }}
+        with:
+          name: python-${{ matrix.python }}-sdk
+          path: validation-results/

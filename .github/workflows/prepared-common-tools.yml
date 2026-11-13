@@ -1,0 +1,36 @@
+name: Prepared contribution baseline tools
+
+on:
+  push:
+    branches: [ci/prepared-common-tools-20261113]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  baseline:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: 890de53a4dd18e35313173e6dc34d9559b1a9733
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: clients/python/agentic-sandbox-client/pyproject.toml
+      - name: Install test dependencies
+        run: python -m pip install -e './clients/python/agentic-sandbox-client[test]' -r dev/tools/requirements.txt
+      - name: Verify chart tooling with current Git
+        run: python -m pytest -q dev/tools/verify_chart_version_test.py --junitxml=validation-results/chart.xml
+      - name: Verify TLS fixtures with current OpenSSL
+        if: ${{ !cancelled() }}
+        run: python -m pytest -q clients/python/agentic-sandbox-client/k8s_agent_sandbox/test/unit/test_async_sandboxclient.py -k TestAsyncTLSContextReuse --junitxml=validation-results/tls.xml
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: ${{ !cancelled() }}
+        with:
+          name: baseline-tool-checks
+          path: validation-results/

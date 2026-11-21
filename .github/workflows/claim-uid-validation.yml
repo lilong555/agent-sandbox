@@ -1,7 +1,7 @@
-name: Claim UID validation
+name: Claim UID review validation
 on:
   push:
-    branches: [ci/claim-uid-20261121]
+    branches: [ci/claim-uid-review-20261121]
 permissions:
   contents: read
 jobs:
@@ -19,47 +19,14 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           fetch-depth: 0
-      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e
-        with:
-          go-version-file: go.mod
-          cache: true
       - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python }}
       - name: SDK tests and unfixed baseline
         run: python .github/claim-uid-validation.py sdk
-      - name: Kubernetes API deletion probe
-        if: matrix.python == '3.11'
-        run: python .github/claim-uid-validation.py api
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
           name: claim-uid-python-${{ matrix.python }}
-          path: _artifacts/
-          if-no-files-found: error
-  repository:
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-    env:
-      GOMAXPROCS: '4'
-      GOMEMLIMIT: 4GiB
-      ARTIFACTS: ${{ github.workspace }}/_artifacts
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e
-        with:
-          go-version-file: go.mod
-          cache: true
-      - uses: actions/setup-python@v6
-        with:
-          python-version: '3.14'
-      - name: Repository verification
-        run: python .github/claim-uid-validation.py all
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        if: always()
-        with:
-          name: claim-uid-repository
           path: _artifacts/
           if-no-files-found: error

@@ -15,6 +15,7 @@ ARTIFACTS = ROOT / "_artifacts"
 PACKAGE = Path("clients/python/agentic-sandbox-client")
 REGRESSION = Path("k8s_agent_sandbox/test/unit/test_adoption_lifecycle.py")
 BASELINE = "1b7d5336539b9acd44ec431a61f4e83700a0a392"
+REVIEW_BASELINE = "26ebc2a46449a8c07f2e27e50b2c8b9813e90ecc"
 BUG_TESTS = (
     "test_terminate_preserves_recreated_claim",
     "test_handle_reuse_distinguishes_claim_uid",
@@ -63,6 +64,26 @@ def sdk():
         finally:
             run("git", "worktree", "remove", "--force", str(baseline))
 
+    with tempfile.TemporaryDirectory(prefix="uid-review-baseline-") as directory:
+        baseline = Path(directory) / "repo"
+        run("git", "worktree", "add", "--detach", str(baseline), REVIEW_BASELINE)
+        try:
+            shutil.copyfile(ROOT / PACKAGE / REGRESSION, baseline / PACKAGE / REGRESSION)
+            env = dict(os.environ, PYTHONPATH=str(baseline / PACKAGE))
+            result = subprocess.run([
+                str(python), "-m", "pytest", "-q", str(baseline / PACKAGE / REGRESSION),
+                "-k", "old_lookup_preserves or generated_creation",
+                f"--junitxml={ARTIFACTS / 'review-baseline.xml'}",
+            ], cwd=baseline / PACKAGE, env=env)
+            cases = ET.parse(ARTIFACTS / "review-baseline.xml").findall(".//testcase")
+            assert result.returncode == 1, result.returncode
+            assert len(cases) == 8
+            assert sum(case.find("failure") is not None for case in cases) == 5
+            assert sum(len(case) == 0 for case in cases) == 3
+            print("Pre-review baseline: 5 regression failures and 3 passing controls", flush=True)
+        finally:
+            run("git", "worktree", "remove", "--force", str(baseline))
+
 
 def api():
     assets = subprocess.check_output([
@@ -92,5 +113,10 @@ if __name__ == "__main__":
     source = subprocess.check_output([
         "git", "log", "-1", "--format=%H", "--", str(PACKAGE),
     ], cwd=ROOT, text=True).strip()
-    (ARTIFACTS / "source.json").write_text(json.dumps({"source": source, "baseline": BASELINE}) + "\n")
+    tree = subprocess.check_output([
+        "git", "rev-parse", f"HEAD:{PACKAGE}",
+    ], cwd=ROOT, text=True).strip()
+    (ARTIFACTS / "source.json").write_text(json.dumps({
+        "source": source, "sdk_tree": tree, "baseline": BASELINE, "review_baseline": REVIEW_BASELINE,
+    }) + "\n")
     {"sdk": sdk, "api": api, "all": all_checks}[sys.argv[1]]()

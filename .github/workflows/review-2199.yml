@@ -1,0 +1,31 @@
+name: Review 2199 validation
+on:
+  push:
+    branches: [ci/review-2199-20261121]
+permissions:
+  contents: read
+jobs:
+  python-sdk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GOMAXPROCS: '4'
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e
+        with:
+          go-version-file: go.mod
+          cache: true
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: SDK test-unit entry point and deadline regressions
+        run: python .github/review-2199.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: review-2199
+          path: _artifacts/
+          if-no-files-found: error

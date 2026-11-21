@@ -1,0 +1,29 @@
+name: WarmPool recreation reproduction
+on:
+  push:
+    branches: [ci/warmpool-recreation-20261121]
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GOMAXPROCS: '4'
+      GOMEMLIMIT: 4GiB
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e
+        with:
+          go-version-file: go.mod
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verify the regression and controls
+        run: python .github/warmpool-recreation/reproduce.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: warmpool-recreation-evidence
+          path: _artifacts/
+          if-no-files-found: error

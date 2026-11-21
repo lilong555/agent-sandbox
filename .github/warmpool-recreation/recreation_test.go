@@ -27,6 +27,8 @@ import (
 	sandboxcontrollers "sigs.k8s.io/agent-sandbox/controllers"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
+	"sigs.k8s.io/controller-runtime/pkg/event"
+	"sigs.k8s.io/controller-runtime/pkg/handler"
 )
 
 func TestWarmPoolRecreation(t *testing.T) {
@@ -80,6 +82,63 @@ func TestWarmPoolRecreation(t *testing.T) {
 			require.NoError(t, c.Get(ctx, client.ObjectKeyFromObject(member), member))
 			require.False(t, member.DeletionTimestamp.IsZero(), "the old member remains terminating in every scenario")
 			require.Equal(t, tc.creates, c.createCount(), "a recreated pool must not wait for a previous pool's expectations")
+		})
+	}
+}
+
+func TestWarmPoolRecreationLateEvents(t *testing.T) {
+	for _, previousOwner := range []bool{true, false} {
+		name := "current_owner_event"
+		if previousOwner {
+			name = "previous_owner_event"
+		}
+		t.Run(name, func(t *testing.T) {
+			ctx := context.Background()
+			pool, template := newOverCreationFixture(1)
+			scheme := newTestScheme()
+			c := newLaggingClient(newFakeClient(scheme, pool, template))
+			r := SandboxWarmPoolReconciler{Client: c, Scheme: scheme, MaxBatchSize: sandboxCreateDeleteMaxBatchSize}
+			request := ctrl.Request{NamespacedName: client.ObjectKeyFromObject(pool)}
+			_, err := r.Reconcile(ctx, request)
+			require.NoError(t, err)
+			require.Equal(t, 1, c.createCount())
+			members := &sandboxv1beta1.SandboxList{}
+			require.NoError(t, c.WithWatch.List(ctx, members))
+			require.Len(t, members.Items, 1)
+			oldMember := members.Items[0].DeepCopy()
+
+			require.NoError(t, c.Delete(ctx, pool))
+			_, err = r.Reconcile(ctx, request)
+			require.NoError(t, err)
+			pool, _ = newOverCreationFixture(1)
+			pool.UID = "replacement-pool-uid"
+			require.NoError(t, c.Create(ctx, pool))
+			_, err = r.Reconcile(ctx, request)
+			require.NoError(t, err)
+			require.Equal(t, 2, c.createCount())
+
+			observed := oldMember
+			if !previousOwner {
+				require.NoError(t, c.WithWatch.List(ctx, members))
+				for i := range members.Items {
+					if metav1.IsControlledBy(&members.Items[i], pool) {
+						observed = members.Items[i].DeepCopy()
+						break
+					}
+				}
+				require.True(t, metav1.IsControlledBy(observed, pool))
+			}
+			// The object's cache update precedes its watch callback. The new
+			// pool's own create remains hidden when the old event arrives.
+			c.mu.Lock()
+			delete(c.hidden, observed.Namespace+"/"+observed.Name)
+			c.mu.Unlock()
+			h := &warmPoolSandboxEventHandler{EventHandler: handler.Funcs{}, expectations: r.exp()}
+			h.Create(ctx, event.CreateEvent{Object: observed}, nil)
+			_, err = r.Reconcile(ctx, request)
+			require.NoError(t, err)
+			t.Logf("previous_owner_event=%t creates_before_event=2 creates_after_event=%d", previousOwner, c.createCount())
+			require.Equal(t, 2, c.createCount(), "a previous owner's event must not acknowledge the new pool's create")
 		})
 	}
 }

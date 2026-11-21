@@ -185,7 +185,7 @@ def main():
                     path = f"/apis/apiextensions.k8s.io/v1/customresourcedefinitions/{plural}.{group}"
                     for _ in range(100):
                         if any(c["type"] == "Established" and c["status"] == "True"
-                               for c in request("GET", path).get("status", {}).get("conditions", [])):
+                               for c in (request("GET", path).get("status", {}).get("conditions") or [])):
                             break
                         time.sleep(0.1)
                     else:

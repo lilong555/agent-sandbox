@@ -1,0 +1,32 @@
+name: Claim UID real API validation
+on:
+  push:
+    branches: [ci/claim-uid-api-20261121]
+permissions:
+  contents: read
+jobs:
+  api-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GOMAXPROCS: '4'
+      GOMEMLIMIT: 4GiB
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e
+        with:
+          go-version-file: go.mod
+          cache: true
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Kubernetes API deletion probe
+        run: python .github/claim-uid-validation.py api
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: claim-uid-real-api
+          path: _artifacts/
+          if-no-files-found: error

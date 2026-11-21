@@ -69,6 +69,9 @@ def api():
         "go", "-C", "dev/tools", "tool", "setup-envtest", "use", "1.37.0", "-p", "path",
     ], cwd=ROOT, text=True).strip()
     python = ROOT / "bin/python-venv-k8s-agent-sandbox/bin/python"
+    if not python.exists():
+        run(sys.executable, "-m", "venv", str(python.parent.parent))
+        run(str(python), "-m", "pip", "install", "--quiet", "-e", str(ROOT / PACKAGE) + "[test]")
     env = dict(os.environ, KUBEBUILDER_ASSETS=assets)
     run(str(python), str(ROOT / ".github/claim-uid-api.py"), env=env)
 
@@ -86,6 +89,8 @@ def all_checks():
 
 if __name__ == "__main__":
     ARTIFACTS.mkdir(exist_ok=True)
-    source = subprocess.check_output(["git", "rev-parse", "HEAD^"], cwd=ROOT, text=True).strip()
+    source = subprocess.check_output([
+        "git", "log", "-1", "--format=%H", "--", str(PACKAGE),
+    ], cwd=ROOT, text=True).strip()
     (ARTIFACTS / "source.json").write_text(json.dumps({"source": source, "baseline": BASELINE}) + "\n")
     {"sdk": sdk, "api": api, "all": all_checks}[sys.argv[1]]()

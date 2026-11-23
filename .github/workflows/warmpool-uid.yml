@@ -12,7 +12,7 @@ jobs:
       GOMAXPROCS: '4'
       GOMEMLIMIT: 4GiB
       GOFLAGS: -p=4
-      SOURCE_COMMIT: 08696939
+      SOURCE_COMMIT: '0869693996cfe687cca3aa863007380c85e7a88c'
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:

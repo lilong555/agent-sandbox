@@ -1,0 +1,36 @@
+name: WarmPool UID validation
+on:
+  push:
+    branches: [ci/warmpool-uid-20261123]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      GOMAXPROCS: '4'
+      GOMEMLIMIT: 4GiB
+      GOFLAGS: -p=4
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e
+        with:
+          go-version-file: go.mod
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Standard project checks
+        run: python .github/warmpool-uid/validate.py all
+      - name: Regression and real-cache checks
+        if: always()
+        run: python .github/warmpool-uid/validate.py probes
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: warmpool-uid-evidence
+          path: _artifacts/
+          if-no-files-found: error

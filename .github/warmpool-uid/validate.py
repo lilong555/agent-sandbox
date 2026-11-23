@@ -10,8 +10,8 @@ import sys
 root = Path.cwd()
 artifacts = root / "_artifacts"
 artifacts.mkdir(exist_ok=True)
-source = subprocess.check_output(["git", "rev-parse", "HEAD^"], text=True).strip()
-subprocess.run(["git", "diff", "--exit-code", "HEAD^", "HEAD", "--", "extensions/controllers"], check=True)
+source = subprocess.check_output(["git", "rev-parse", os.environ["SOURCE_COMMIT"]], text=True).strip()
+subprocess.run(["git", "diff", "--exit-code", source, "HEAD", "--", "extensions/controllers"], check=True)
 (artifacts / "source-commit.txt").write_text(source + "\n")
 
 

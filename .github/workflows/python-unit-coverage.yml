@@ -1,0 +1,45 @@
+name: Python unit coverage validation
+on:
+  push:
+    branches: [ci/python-unit-coverage-20261123]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      GOMAXPROCS: '4'
+      GOMEMLIMIT: 4GiB
+      GOFLAGS: -p=4
+      ARTIFACTS: ${{ github.workspace }}/bin/test-artifacts
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e
+        with:
+          go-version-file: go.mod
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.23.5'
+      - name: Install npm
+        run: npm install --global npm@11.19.0
+      - name: Verify source revision
+        run: git diff --exit-code 68541ccc585a065dcbb88e106cefd69237bc0d08 HEAD -- . ':!.github'
+      - name: Standard project checks
+        run: |
+          mkdir -p "$ARTIFACTS"
+          make all > "$ARTIFACTS/make-all.log" 2>&1
+          git diff --exit-code
+      - name: Inspect coverage reports and measure overhead
+        run: python .github/python-coverage/validate.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: python-unit-coverage-evidence
+          path: bin/test-artifacts/
+          if-no-files-found: error
